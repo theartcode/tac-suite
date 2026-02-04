@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import ProfileCards from "@/components/ProfileCards";
 import WhyTAC from "@/components/WhyTAC";
 import StackedScrollCards from "@/components/StackedScrollCards";
+import Testimonials from "@/components/Testimonials";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <ProfileCards />
       <WhyTAC />
       <StackedScrollCards />
+      <Testimonials />
+      <Footer />
     </>
   );
 }

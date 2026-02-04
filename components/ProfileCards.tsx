@@ -4,13 +4,17 @@ import Image from "next/image";
 
 export default function ProfileCards() {
   return (
-    <section className="relative w-full py-48 bg-[#f4faf6]">
-      <div className="max-w-[1440px] mx-auto px-6">
-        <h2 className="text-4xl font-semibold text-green-900 mb-28">
+    <section className="relative w-full py-44 bg-[#f1f7f3]">
+      {/* subtle vertical blend for smooth section transition */}
+      <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-b from-white/70 via-transparent to-white/70 pointer-events-none" />
+
+      {/* CONTENT */}
+      <div className="relative w-full px-[8%]">
+        <h2 className="text-4xl font-semibold text-green-900 mb-32">
           Our Experts
         </h2>
 
-        <div className="flex flex-col lg:flex-row justify-center gap-24">
+        <div className="flex flex-col lg:flex-row gap-16">
           <ProfileCard
             image="/profile1.jpg"
             tag="DESIGN"
@@ -46,29 +50,30 @@ function ProfileCard({
   return (
     <div
       className="
-        w-[560px] h-[820px]
+        flex-1
+        min-w-[420px]
         bg-white
-        rounded-[32px]
-        border border-green-200
-        shadow-[0_40px_110px_rgba(0,80,40,0.18)]
+        rounded-[40px]
+        border border-green-200/70
+        shadow-[0_50px_140px_rgba(0,80,40,0.2)]
         overflow-hidden
       "
     >
-      {/* IMAGE */}
-      <div className="relative h-[62%] w-full">
+      {/* IMAGE — HEIGHT REDUCED */}
+      <div className="relative h-[55vh] w-full bg-green-100">
         <Image
           src={image}
           alt={name}
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-green-900/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
       </div>
 
-      {/* CONTENT */}
-      <div className="h-[38%] px-12 py-12 flex flex-col justify-between">
+      {/* CONTENT — TIGHTER VERTICAL SPACE */}
+      <div className="px-14 py-14 flex flex-col justify-between gap-10 bg-gradient-to-b from-white to-[#f7fbf9]">
         <div>
-          <span className="inline-block mb-5 px-5 py-2 text-sm font-semibold tracking-wide bg-yellow-300 text-green-900 rounded-full">
+          <span className="inline-block mb-5 px-6 py-2 text-sm font-semibold bg-green-100 text-green-900 rounded-full">
             {tag}
           </span>
 
@@ -83,12 +88,8 @@ function ProfileCard({
 
         {/* META */}
         <div className="flex items-center gap-12 text-sm text-green-700">
-          <span className="flex items-center gap-2">
-            👤 <span>312</span>
-          </span>
-          <span className="flex items-center gap-2">
-            ⭐ <span>48</span>
-          </span>
+          <span className="flex items-center gap-2">👤 312</span>
+          <span className="flex items-center gap-2">⭐ 48</span>
         </div>
       </div>
     </div>

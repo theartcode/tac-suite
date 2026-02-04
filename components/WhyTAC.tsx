@@ -29,70 +29,101 @@ export default function WhyTACSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="w-full bg-white py-32">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative w-full py-40 bg-white">
+      {/* soft transition from previous section */}
+      <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-b from-[#f1f7f3] via-white to-white pointer-events-none" />
+
+      {/* CONTENT */}
+      <div className="relative w-full px-[5%]">
 
         {/* ================= TITLE ================= */}
-        <div className="max-w-3xl">
-          <h2 className="text-5xl font-bold text-green-900">
+        <div className="max-w-[1000px]">
+          <h2 className="text-6xl font-bold text-green-900 leading-tight">
             Why <span className="text-yellow-400">TAC</span>
           </h2>
 
-          <p className="mt-6 text-lg text-green-800">
-            TAC is built for brands that want clarity, consistency, and
-            measurable digital growth — not vanity metrics.
+          <p className="mt-8 text-xl text-green-800 leading-relaxed">
+            TAC is built for brands that demand clarity, consistency, and
+            measurable digital growth — not vanity metrics or guesswork.
           </p>
         </div>
 
         {/* ================= CONTENT ================= */}
-        <div className="mt-20 grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-20">
+        <div className="mt-32 grid grid-cols-1 lg:grid-cols-[1.2fr_1.8fr] gap-28">
 
           {/* LEFT LIST */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-8">
             {items.map((item, index) => (
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                className={`text-left p-6 border-l-4 transition-all duration-300
+                className={`
+                  group relative text-left p-8 rounded-3xl transition-all duration-500
                   ${
                     active === index
-                      ? "border-green-600 bg-green-50"
-                      : "border-transparent hover:bg-green-50"
+                      ? "bg-green-50 shadow-[0_24px_70px_rgba(34,197,94,0.15)]"
+                      : "hover:bg-green-50"
                   }
                 `}
               >
-                <h3 className="text-xl font-semibold text-green-900">
+                {/* Accent bar */}
+                <span
+                  className={`
+                    absolute left-0 top-1/2 -translate-y-1/2
+                    h-[75%] w-1.5 rounded-full transition-all duration-500
+                    ${
+                      active === index
+                        ? "bg-green-600"
+                        : "bg-transparent group-hover:bg-green-400"
+                    }
+                  `}
+                />
+
+                <h3 className="text-2xl font-semibold text-green-900">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-green-700">
+
+                <p className="mt-3 text-lg text-green-700 leading-relaxed">
                   {item.desc}
                 </p>
               </button>
             ))}
           </div>
 
-          {/* RIGHT FEATURE BOX */}
-          <div className="relative">
+          {/* RIGHT FEATURE */}
+          <div className="relative flex items-center">
+            <div className="relative w-full h-[560px] rounded-[52px] bg-gradient-to-br from-green-500 to-green-600 shadow-[0_50px_140px_rgba(34,197,94,0.35)] flex items-center justify-center overflow-hidden">
 
-            <div className="w-full h-[420px] bg-green-600 rounded-3xl shadow-[0_40px_120px_rgba(34,197,94,0.45)] flex items-center justify-center">
+              <div className="absolute inset-0 bg-white/10" />
 
-              <div className="bg-white w-[85%] h-[75%] rounded-2xl p-10 flex flex-col justify-center">
-                <span className="inline-block mb-4 px-4 py-1 bg-yellow-300 text-green-900 font-semibold w-fit">
-                  {active + 1} / {items.length}
+              {/* INNER CARD */}
+              <div
+                key={active}
+                className="
+                  relative bg-white w-[88%] h-[78%]
+                  rounded-[40px] p-16
+                  flex flex-col justify-center
+                  shadow-[0_30px_90px_rgba(34,197,94,0.2)]
+                  transition-all duration-500
+                "
+              >
+                <span className="inline-flex items-center gap-2 mb-8 px-6 py-3 bg-yellow-300 text-green-900 font-semibold rounded-full w-fit">
+                  <span className="text-base tracking-wide">
+                    {active + 1} / {items.length}
+                  </span>
                 </span>
 
-                <h3 className="text-3xl font-bold text-green-900">
+                <h3 className="text-4xl font-bold text-green-900 leading-tight">
                   {items[active].title}
                 </h3>
 
-                <p className="mt-4 text-lg text-green-800">
+                <p className="mt-6 text-xl text-green-800 leading-relaxed max-w-[92%]">
                   {items[active].desc}
                 </p>
               </div>
-
             </div>
-
           </div>
+
         </div>
       </div>
     </section>
