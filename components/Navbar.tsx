@@ -24,10 +24,8 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       const current = window.scrollY;
-
       setScrolled(current > 50);
       setHidden(current > lastScrollY.current && current > 140);
-
       lastScrollY.current = current;
     };
 
@@ -52,19 +50,20 @@ export default function Navbar() {
             ${
               scrolled
                 ? `
-                  max-w-[92%]
-                  px-14 py-4
-                  bg-white/75
-                  backdrop-blur-lg
+                  max-w-[85%]        /* Matches your other section widths */
+                  px-8 py-2         
+                  bg-white/90
+                  backdrop-blur-xl
                   rounded-full
-                  border border-green-200/70
-                  shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+                  border border-[#365c47]/20
+                  shadow-[0_10px_30px_rgba(0,0,0,0.1)]
                   justify-between
+                  mt-3              
                 `
                 : `
                   max-w-full
-                  px-8 md:px-20
-                  py-7
+                  px-[5%]           /* Applied 5% padding */
+                  py-6              
                   bg-transparent
                   justify-between
                 `
@@ -76,8 +75,8 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="TAC"
-              width={scrolled ? 140 : 170}
-              height={50}
+              width={scrolled ? 110 : 130} /* Slightly smaller base logo */
+              height={40}
               priority
               className="transition-all duration-500"
             />
@@ -87,7 +86,7 @@ export default function Navbar() {
           <ul
             className={`
               hidden md:flex items-center
-              ${scrolled ? "gap-10" : "gap-16"}
+              ${scrolled ? "gap-6" : "gap-8"} /* Tighter gap for better fit */
             `}
           >
             {navItems.map((item) => (
@@ -98,24 +97,28 @@ export default function Navbar() {
               >
                 <span
                   className={`
-                    uppercase tracking-widest font-semibold
+                    uppercase tracking-[0.12em] font-extrabold 
                     transition-all duration-300
-                    ${scrolled ? "text-[16px]" : "text-[18px]"}
+                    ${scrolled ? "text-[11px]" : "text-[13px]"} /* Scaled down text */
                     ${
                       active === item
-                        ? "text-yellow-500"
-                        : "text-green-800 group-hover:text-yellow-500"
+                        ? "text-[#FFC62A]"
+                        : scrolled
+                        ? "text-[#2F2F2F] group-hover:text-[#365c47]"
+                        : "text-white group-hover:text-[#FFC62A]"
                     }
                   `}
                 >
-                  {item}
+                  <span className={active === item ? "font-serif italic capitalize tracking-normal text-base" : ""}>
+                    {item}
+                  </span>
                 </span>
 
                 {/* UNDERLINE */}
                 <span
                   className={`
-                    absolute -bottom-2 left-1/2 h-[2px]
-                    bg-yellow-500
+                    absolute -bottom-1 left-1/2 h-[2px]
+                    bg-[#FFC62A]
                     transition-all duration-300
                     ${
                       active === item
@@ -130,7 +133,7 @@ export default function Navbar() {
 
           {/* MOBILE BUTTON */}
           <button
-            className="md:hidden text-green-800 text-3xl"
+            className={`md:hidden text-2xl transition-colors ${scrolled ? "text-[#2F2F2F]" : "text-white"}`}
             onClick={() => setMobileOpen(true)}
           >
             ☰
@@ -141,27 +144,29 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       <div
         className={`
-          fixed inset-0 z-40
-          bg-white
-          transition-transform duration-500 ease-in-out
+          fixed inset-0 z-[60]
+          bg-[#365c47]
+          transition-transform duration-700 ease-in-out
           ${mobileOpen ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        <div className="flex justify-between items-center px-8 py-6">
-          <Image src="/logo.png" alt="TAC" width={130} height={40} />
+        <div className="flex justify-between items-center px-[5%] py-6">
+          <Image src="/logo.png" alt="TAC" width={110} height={35} className="brightness-0 invert" />
           <button
             onClick={() => setMobileOpen(false)}
-            className="text-3xl text-green-800"
+            className="text-3xl text-[#FFC62A]"
           >
             ✕
           </button>
         </div>
 
-        <ul className="flex flex-col items-center gap-10 mt-24">
+        <ul className="flex flex-col items-center gap-6 mt-12">
           {navItems.map((item) => (
             <li
               key={item}
-              className="text-2xl font-semibold tracking-widest text-green-800 hover:text-yellow-500 transition"
+              className={`text-xl font-extrabold tracking-tighter transition-all ${
+                active === item ? "text-[#FFC62A] font-serif italic capitalize" : "text-white"
+              }`}
               onClick={() => {
                 setActive(item);
                 setMobileOpen(false);

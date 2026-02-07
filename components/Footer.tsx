@@ -1,64 +1,62 @@
 "use client";
 
 import Image from "next/image";
+import { ArrowUpRight, Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full bg-[#0f3d2e] pt-36 pb-16 overflow-hidden">
+    <footer className="relative w-full bg-[#2F2F2F] pt-24 pb-12 overflow-hidden">
+      
+      {/* TOP ACCENT LINE - Brand Yellow */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-[#FFC62A]" />
 
-      {/* TOP ACCENT STRIP */}
-      <div className="absolute top-0 left-0 w-full h-2 bg-yellow-400" />
+      <div className="relative w-full px-[5%] z-10">
 
-      {/* MAIN CONTENT */}
-      <div className="relative w-full px-[8%]">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-16 lg:gap-24">
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-28">
-
-          {/* BRAND */}
-          <div>
-            {/* LOGO */}
+          {/* BRAND BLOCK */}
+          <div className="flex flex-col items-start">
             <Image
-              src="/logo-tac.png"
-              alt="TAC Logo"
-              width={200}
-              height={200}
-              className="object-contain"
+              src="/logo-tac.png" 
+              alt="The Art Code Logo"
+              width={140}
+              height={45}
+              className="object-contain brightness-0 invert"
               priority
             />
 
-            <p className="mt-10 text-2xl font-medium text-green-100 leading-relaxed max-w-lg">
-              TAC empowers brands through design, technology, and growth
-              systems — building clarity, consistency, and real impact.
+            <p className="mt-8 text-base font-medium text-white/50 leading-relaxed max-w-sm">
+              <span className="text-white font-serif italic">The Art Code</span> is a practitioner-led ecosystem built to master digital marketing, cinematic editing, and strategic design.
             </p>
 
-            <div className="mt-12 flex items-center gap-8">
-              <SocialIcon type="x" />
-              <SocialIcon type="instagram" />
-              <SocialIcon type="linkedin" />
-              <SocialIcon type="facebook" />
+            <div className="mt-8 flex items-center gap-4">
+              <SocialIcon icon={<Twitter size={16} />} />
+              <SocialIcon icon={<Instagram size={16} />} />
+              <SocialIcon icon={<Linkedin size={16} />} />
+              <SocialIcon icon={<Facebook size={16} />} />
             </div>
           </div>
 
-          {/* SITEMAP */}
+          {/* NAVIGATION COLUMNS */}
           <FooterColumn
-            title="Company"
-            links={["About TAC", "Our Experts", "Careers", "Contact"]}
+            title="The Academy"
+            links={["About TAC", "Our Experts", "Success Stories", "Contact Support"]}
           />
 
           <FooterColumn
-            title="Services"
+            title="Knowledge Hub"
             links={[
               "Digital Marketing",
-              "Creative Design",
-              "Content Strategy",
-              "Growth Consulting",
+              "Client Management",
+              "Editing",
+              "Designing",
             ]}
           />
 
           <FooterColumn
             title="Resources"
             links={[
-              "Programs",
+              "Curriculum",
               "Case Studies",
               "Insights",
               "Privacy Policy",
@@ -66,23 +64,59 @@ export default function Footer() {
           />
         </div>
 
-        {/* CTA STRIP */}
-        <div className="mt-32 flex flex-col md:flex-row items-center justify-between gap-12 rounded-3xl bg-[#14532d] px-16 py-14 border border-green-700">
+        {/* --- INTERACTIVE CTA BOX --- */}
+        <div className="mt-24 relative group">
+          <div className="
+            flex flex-col lg:flex-row items-center justify-between gap-8 
+            bg-[#365c47] px-10 py-12 border border-white/10
+            rounded-tl-none rounded-br-none rounded-tr-[40px] rounded-bl-[40px]
+            transition-all duration-500 hover:shadow-[0_30px_80px_rgba(0,0,0,0.3)]
+          ">
+            <div className="max-w-xl text-center lg:text-left">
+              <h3 className="text-3xl md:text-5xl font-black text-white tracking-tighter leading-tight">
+                Ready to crack <br /> 
+                <span className="font-serif italic text-[#FFC62A]">The Art Code?</span>
+              </h3>
+              <p className="mt-4 text-base text-white/60 font-medium">
+                Master the intersection of technical precision and creative mastery.
+              </p>
+            </div>
 
-          <p className="text-3xl font-extrabold text-white leading-tight">
-            Ready to build something impactful with TAC?
-          </p>
-
-          <button className="px-12 py-5 rounded-full bg-yellow-400 text-green-900 text-xl font-extrabold hover:bg-yellow-300 transition">
-            Get Started
-          </button>
+            <button className="
+              group flex items-center gap-3 px-10 py-5 
+              bg-[#FFC62A] text-[#2F2F2F] text-sm font-black uppercase tracking-widest 
+              rounded-tl-none rounded-br-none rounded-tr-2xl rounded-bl-2xl
+              transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95
+            ">
+              Apply Now
+              <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </button>
+          </div>
         </div>
 
         {/* BOTTOM BAR */}
-        <div className="mt-28 border-t border-green-700 pt-12 flex flex-col md:flex-row items-center justify-between gap-8 text-lg font-semibold text-green-200">
-          <span>© {new Date().getFullYear()} TAC. All rights reserved.</span>
-          <span>Designed with clarity & purpose.</span>
+        <div className="mt-20 border-t border-white/10 pt-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col gap-1 text-center md:text-left">
+            <span className="text-sm font-bold text-white tracking-tight">
+              © {new Date().getFullYear()} The Art Code
+            </span>
+            <span className="text-[10px] font-medium text-white/30 uppercase tracking-[0.2em]">
+              Architecting Digital Excellence
+            </span>
+          </div>
+
+          <div className="flex items-center gap-8">
+            <button className="text-[10px] font-bold text-white/30 hover:text-[#FFC62A] transition-colors uppercase tracking-widest">Legal</button>
+            <button className="text-[10px] font-bold text-white/30 hover:text-[#FFC62A] transition-colors uppercase tracking-widest">Syllabus</button>
+            <div className="h-6 w-[1px] bg-white/10 hidden md:block" />
+            <span className="text-[10px] font-black text-white px-3 py-1 border border-white/20 rounded-md">TAC™</span>
+          </div>
         </div>
+      </div>
+
+      {/* BACKGROUND WATERMARK */}
+      <div className="absolute -bottom-6 -right-6 text-[10rem] font-black text-white/[0.02] select-none pointer-events-none tracking-tighter">
+        TAC
       </div>
     </footer>
   );
@@ -90,25 +124,19 @@ export default function Footer() {
 
 /* ---------------- HELPERS ---------------- */
 
-function FooterColumn({
-  title,
-  links,
-}: {
-  title: string;
-  links: string[];
-}) {
+function FooterColumn({ title, links }: { title: string; links: string[] }) {
   return (
-    <div>
-      <h4 className="text-2xl font-extrabold text-white mb-10">
+    <div className="flex flex-col">
+      <h4 className="text-[10px] font-black text-[#FFC62A] uppercase tracking-[0.3em] mb-8">
         {title}
       </h4>
-
-      <ul className="space-y-6">
+      <ul className="space-y-4">
         {links.map((link, i) => (
           <li
             key={i}
-            className="text-xl font-semibold text-green-100 hover:text-yellow-400 transition cursor-pointer"
+            className="group flex items-center gap-2 text-sm font-bold text-white/50 hover:text-white transition-all cursor-pointer"
           >
+            <span className="w-0 h-0.5 bg-[#FFC62A] transition-all group-hover:w-3" />
             {link}
           </li>
         ))}
@@ -117,34 +145,14 @@ function FooterColumn({
   );
 }
 
-/* ---------------- SOCIAL ICONS ---------------- */
-
-function SocialIcon({ type }: { type: "x" | "instagram" | "linkedin" | "facebook" }) {
+function SocialIcon({ icon }: { icon: React.ReactNode }) {
   return (
-    <div className="w-14 h-14 rounded-full border-2 border-green-600 flex items-center justify-center text-green-200 hover:bg-yellow-400 hover:text-green-900 hover:border-yellow-400 transition cursor-pointer">
-      {type === "x" && (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
-          <path d="M18.3 2H21l-6.6 7.6L22 22h-6.6l-5.1-6.7L4.6 22H2l7.1-8.1L2 2h6.7l4.6 6L18.3 2z" />
-        </svg>
-      )}
-
-      {type === "instagram" && (
-        <svg viewBox="0 0 24 24" className="w-7 h-7 fill-current">
-          <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-        </svg>
-      )}
-
-      {type === "linkedin" && (
-        <svg viewBox="0 0 24 24" className="w-7 h-7 fill-current">
-          <path d="M4 3a2 2 0 110 4 2 2 0 010-4zm-1 6h2v12H3V9zm6 0h2v2h.1a2.2 2.2 0 012-1c2.1 0 3 1.4 3 3.3V21h-2v-6.5c0-1.6-.6-2.3-1.6-2.3s-1.9.8-1.9 2.3V21H9V9z" />
-        </svg>
-      )}
-
-      {type === "facebook" && (
-        <svg viewBox="0 0 24 24" className="w-7 h-7 fill-current">
-          <path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H8v3h3v8h3v-8h3l1-3h-4V9c0-.6.4-1 1-1z" />
-        </svg>
-      )}
+    <div className="
+      w-10 h-10 rounded-full border border-white/10 flex items-center justify-center 
+      text-white/30 transition-all cursor-pointer
+      hover:bg-[#FFC62A] hover:text-[#2F2F2F] hover:border-[#FFC62A] hover:scale-110
+    ">
+      {icon}
     </div>
   );
 }

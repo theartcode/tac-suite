@@ -1,11 +1,16 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Instrument_Serif } from 'next/font/google'
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-});
+})
 
+const instrument = Instrument_Serif({
+  weight: '400',
+  subsets: ['latin'],
+  style: 'italic',
+});
 export default function RootLayout({
   children,
 }: {
@@ -19,3 +24,7 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+// Add these variables to your body className
+// <body className={`${inter.variable} ${instrument.variable}`}>
