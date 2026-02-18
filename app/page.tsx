@@ -10,6 +10,9 @@ import Mentors from "@/components/Mentors";
 import Partners from "@/components/Partners";
 import StudentWorks from "@/components/StudentWorks";
 import Tacathon from "@/components/Tacathon";
+import Laptop from "@/components/Laptop"
+import Cursor from "@/components/cursor"
+
 
 export default function Home() {
   return (
@@ -17,7 +20,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <WhyTAC />
-      <StackedScrollCards />  
+      <StackedScrollCards />
+      <Laptop />
       <Partners />
       <Mentors />
       <StudentWorks />
@@ -25,6 +29,7 @@ export default function Home() {
       <FAQ />
       <Testimonials />
       <Footer />
+      <Cursor />
     </>
-  );
+  ); 
 }

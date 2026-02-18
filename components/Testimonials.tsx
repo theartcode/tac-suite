@@ -1,8 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Star, ArrowUpRight, Play } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { 
+  motion, 
+  AnimatePresence, 
+  useScroll, 
+  useVelocity, 
+  useSpring, 
+  useTransform, 
+  useAnimationFrame, 
+  useMotionValue 
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
 
 const videoTestimonials = [
   {
@@ -50,9 +60,42 @@ const videoTestimonials = [
 export default function Testimonials() {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
 
+  // Velocity Logic
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
+    stiffness: 400
+  });
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    clamp: false
+  });
+
+  // We wrap between -33.3% and -66.6% because we tripled the data
+  const x = useTransform(baseX, (v) => `${wrap(-66.66, -33.33, v)}%`);
+
+  const directionFactor = useRef<number>(1);
+  useAnimationFrame((t, delta) => {
+    // Pause animation if a video is being hovered/played
+    if (activeVideoId) return;
+
+    let moveBy = directionFactor.current * 0.5 * (delta / 1000); // Base speed 0.5
+
+    // Reverse direction based on scroll
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1;
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    baseX.set(baseX.get() + moveBy);
+  });
+
   return (
     <section className="relative w-full bg-[#FFF9E6] py-24 overflow-hidden">
-      {/* HEADER - Respecting 5% Padding */}
+      {/* HEADER */}
       <div className="relative w-full z-10 mb-16 flex flex-col items-end text-right px-[5%]">
         <h2 className="text-4xl md:text-6xl font-black text-[#212121] tracking-tighter leading-[0.9] mb-6">
           Proven <br />
@@ -65,13 +108,9 @@ export default function Testimonials() {
         </p>
       </div>
 
-      {/* INFINITE RIGHT MARQUEE */}
+      {/* INFINITE VELOCITY MARQUEE */}
       <div className="relative overflow-hidden py-4">
-        <div
-          className="flex w-max gap-8 animate-marquee-right"
-          style={{ animationPlayState: activeVideoId ? 'paused' : 'running' }}
-        >
-          {/* Tripling the data ensures that as the cards move right, there is always content coming in from the left */}
+        <motion.div className="flex w-max gap-8" style={{ x }}>
           {[...videoTestimonials, ...videoTestimonials, ...videoTestimonials].map((v, i) => (
             <VideoCard
               key={`${v.id}-${i}`}
@@ -81,28 +120,16 @@ export default function Testimonials() {
               onMouseLeave={() => setActiveVideoId(null)}
             />
           ))}
-        </div>
+        </motion.div>
 
-        {/* REFINED EDGE FADES - Matches the 5% Padding Atmosphere */}
+        {/* EDGE FADES */}
         <div className="pointer-events-none absolute top-0 left-0 h-full w-[10%] bg-gradient-to-r from-[#FFF9E6] to-transparent z-30" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-[10%] bg-gradient-to-l from-[#FFF9E6] to-transparent z-30" />
       </div>
-
-      <style jsx>{`
-        @keyframes marqueeRight {
-          0% { transform: translateX(-66.66%); }
-          100% { transform: translateX(-33.33%); }
-        }
-        .animate-marquee-right {
-          /* Slow, smooth movement toward the right */
-          animation: marqueeRight 80s linear infinite;
-        }
-      `}</style>
     </section>
   );
 }
 
-// ... VideoCard Component remains exactly as defined previously
 interface VideoCardProps {
   id?: string;
   name: string;

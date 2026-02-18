@@ -41,3 +41,17 @@ body {
 .animate-scroll-line {
   animation: scroll-line 1.8s ease-in-out infinite;
 }
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 1.8s infinite ease-in-out;
+}

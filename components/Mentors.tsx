@@ -1,8 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import { CheckCircle2, Linkedin } from "lucide-react";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  useVelocity,
+  useAnimationFrame,
+  useMotionValue
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
 
 const mentors = [
   { 
@@ -37,23 +47,38 @@ const mentors = [
 
 export default function MentorShowcase() {
   const [active, setActive] = useState<number | null>(null);
-  const [scrollSpeed, setScrollSpeed] = useState(40); // Increased base to 40s (Slower)
+  
+  // Velocity Logic
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
+    stiffness: 400
+  });
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    clamp: false
+  });
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      /**
-       * 40s is the base calm speed.
-       * We increased the divisor to 400 so the speed-up is much more gentle.
-       * Capped at 20s so it stays professional even when scrolled deep.
-       */
-      const newSpeed = Math.max(20, 40 - scrollY / 400); 
-      setScrollSpeed(newSpeed);
-    };
+  // Wraps the marquee seamlessly
+  const x = useTransform(baseX, (v) => `${wrap(-50, -25, v)}%`);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const directionFactor = useRef<number>(1);
+  useAnimationFrame((t, delta) => {
+    // If a card is active, we stop the animation
+    if (active !== null) return;
+
+    let moveBy = directionFactor.current * 1.5 * (delta / 1000); // 1.5 is base speed
+
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1;
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    baseX.set(baseX.get() + moveBy);
+  });
 
   return (
     <section className="relative w-full py-20 overflow-hidden px-[5%] bg-[#212121]">
@@ -71,12 +96,11 @@ export default function MentorShowcase() {
       </div>
 
       <div className="relative overflow-hidden">
-        <div 
-          className={`flex gap-6 w-max ${active === null ? 'animate-marquee-right' : ''}`}
-          style={{ 
-            animationDuration: `${scrollSpeed}s` 
-          }}
+        <motion.div 
+          className="flex gap-6 w-max"
+          style={{ x }}
         >
+          {/* Quadrupled the array to ensure the wrap has plenty of buffer */}
           {[...mentors, ...mentors, ...mentors, ...mentors].map((mentor, i) => {
             const isOpen = active === i;
 
@@ -142,21 +166,11 @@ export default function MentorShowcase() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
 
         <div className="pointer-events-none absolute left-0 top-0 h-full w-[10%] bg-gradient-to-r from-[#212121] to-transparent z-20" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-[10%] bg-gradient-to-l from-[#212121] to-transparent z-20" />
       </div>
-
-      <style jsx>{`
-        @keyframes marquee-right {
-          from { transform: translateX(-50%); }
-          to { transform: translateX(0); }
-        }
-        .animate-marquee-right {
-          animation: marquee-right linear infinite;
-        }
-      `}</style>
     </section>
   );
 }

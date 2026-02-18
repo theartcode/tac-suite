@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useVelocity, useSpring, useTransform, useAnimationFrame, useMotionValue } from "framer-motion";
+import { wrap } from "@motionone/utils";
 import {
   Trophy,
   Palette,
@@ -34,19 +35,39 @@ const winnersData = [
 export default function TacathonExperience() {
   const [activeId, setActiveId] = useState(1);
 
+  // Velocity Logic for Winners Marquee
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, { damping: 50, stiffness: 400 });
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], { clamp: false });
+
+  const x = useTransform(baseX, (v) => `${wrap(-50, -25, v)}%`);
+  const directionFactor = useRef(1);
+
+  useAnimationFrame((t, delta) => {
+    let moveBy = directionFactor.current * 0.8 * (delta / 1000); // Base speed
+    
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1;
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    baseX.set(baseX.get() + moveBy);
+  });
+
   return (
     <section className="relative w-full py-20 bg-[#FFF9E6] overflow-hidden px-[5%]">
-
-      {/* --- REDUCED SIZE HEADER --- */}
+      {/* --- HEADER --- */}
       <div className="max-w-4xl mx-auto text-center mb-16 space-y-4">
         <span className="block text-[10px] tracking-[0.4em] font-bold text-[#FFC62A] uppercase">
           From the Labs
         </span>
-
         <h2 className="text-5xl md:text-6xl font-black text-[#212121] tracking-tighter leading-[0.9]">
           Tacathon
         </h2>
-
         <p className="text-base md:text-lg text-[#2F2F2F]/50 max-w-lg mx-auto leading-relaxed font-light tracking-tight">
           A high-stakes creative arena where top-tier creators battle for 
           <span className="inline-block ml-2 px-3 py-0.5 rounded-full bg-white/40 backdrop-blur-md border border-white shadow-sm text-[#212121] font-semibold text-sm">
@@ -55,7 +76,7 @@ export default function TacathonExperience() {
         </p>
       </div>
 
-      {/* ACCORDION – UNTOUCHED FUNCTIONALITY */}
+      {/* ACCORDION */}
       <div className="max-w-full mx-auto flex flex-col md:flex-row gap-4 h-[650px] mb-24">
         {tacathonData.map((item) => {
           const isActive = activeId === item.id;
@@ -118,7 +139,7 @@ export default function TacathonExperience() {
         })}
       </div>
 
-      {/* --- REDUCED SIZE SECOND HEADER --- */}
+      {/* --- SECOND HEADER --- */}
       <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
         <h2 className="text-4xl md:text-5xl font-black text-[#212121] tracking-tighter leading-tight">
           Students Got <br />
@@ -129,13 +150,13 @@ export default function TacathonExperience() {
         </p>
       </div>
 
-      {/* MARQUEE – UNTOUCHED FUNCTIONALITY */}
+      {/* VELOCITY MARQUEE */}
       <div className="relative flex overflow-hidden">
-        <div className="flex gap-8 animate-marquee py-6 px-[5%]">
-          {[...winnersData, ...winnersData].map((winner, i) => (
+        <motion.div className="flex gap-8 py-6 px-[5%]" style={{ x }}>
+          {[...winnersData, ...winnersData, ...winnersData, ...winnersData].map((winner, i) => (
             <div
               key={i}
-              className="w-[280px] h-[380px] bg-white rounded-[28px] shadow-xl p-6 flex flex-col justify-between"
+              className="w-[280px] h-[380px] bg-white rounded-[28px] shadow-xl p-6 flex flex-col justify-between shrink-0"
             >
               <div className="relative w-full h-[180px] rounded-2xl overflow-hidden">
                 <Image src={winner.image} alt={winner.name} fill className="object-cover" />
@@ -145,32 +166,17 @@ export default function TacathonExperience() {
                 <h3 className="text-lg font-black text-[#212121]">
                   {winner.name}
                 </h3>
-
                 <div className="flex items-center gap-2 text-xs text-[#365c47] font-semibold">
                   <Building2 size={14} /> {winner.company}
                 </div>
-
                 <div className="flex items-center gap-2 text-xs text-[#212121]/60">
                   <Briefcase size={14} /> {winner.role}
                 </div>
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
-
-      <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-          animation: marquee 45s linear infinite;
-        }
-        .animate-marquee:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   );
 }

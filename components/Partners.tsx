@@ -1,6 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import { useRef } from "react";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  useVelocity,
+  useAnimationFrame,
+  useMotionValue
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
 
 const topLogos = [
   { name: "Facebook", src: "/partners/amazon.png" },
@@ -22,6 +33,62 @@ const bottomLogos = [
   { name: "B3T", src: "/partners/amazon.png" },
 ];
 
+interface VelocityLogosProps {
+  logos: { name: string; src: string }[];
+  baseVelocity: number;
+}
+
+function VelocityRow({ logos, baseVelocity = 100 }: VelocityLogosProps) {
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
+    stiffness: 400
+  });
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    clamp: false
+  });
+
+  // We wrap the x value between -20% and -45% to keep the loop seamless
+  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+
+  const directionFactor = useRef<number>(1);
+  useAnimationFrame((t, delta) => {
+    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+
+    // This makes the scroll direction affect the marquee direction
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1;
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    baseX.set(baseX.get() + moveBy);
+  });
+
+  return (
+    <div className="relative flex overflow-hidden whitespace-nowrap flex-nowrap">
+      <motion.div className="flex gap-4 md:gap-6 py-4" style={{ x }}>
+        {/* Render 4 sets to ensure no empty space during high-velocity scrolling */}
+        {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (
+          <div key={i} className="flex items-center justify-center w-[140px] md:w-[220px] h-16 md:h-20 relative transition-transform duration-300 hover:scale-105 shrink-0">
+            <Image
+              src={logo.src}
+              alt={logo.name}
+              fill
+              sizes="220px"
+              className="object-contain px-2"
+            />
+          </div>
+        ))}
+      </motion.div>
+      <BlurEdges />
+    </div>
+  );
+}
+
 export default function PartneredCompanies() {
   return (
     <section className="relative w-full py-24 bg-[#FFF9E6] overflow-hidden">
@@ -40,58 +107,10 @@ export default function PartneredCompanies() {
         </p>
       </div>
 
-      {/* INCREASED space-y FROM 0 TO 12 TO SEPARATE THE ROWS */}
-      <div className="relative w-full px-[5%] space-y-12 md:space-y-16"> 
-        {/* TOP ROW */}
-        <div className="relative flex overflow-hidden">
-          <div className="flex gap-4 md:gap-6 animate-marquee-right whitespace-nowrap py-4">
-            {[...topLogos, ...topLogos, ...topLogos].map((logo, i) => (
-              <div key={i} className="flex items-center justify-center w-[140px] md:w-[220px] h-16 md:h-20 relative opacity-100 transition-transform duration-300 hover:scale-105">
-                <Image
-                  src={logo.src}
-                  alt={logo.name}
-                  fill
-                  sizes="220px"
-                  className="object-contain px-2"
-                />
-              </div>
-            ))}
-          </div>
-          <BlurEdges />
-        </div>
-
-        {/* BOTTOM ROW */}
-        <div className="relative flex overflow-hidden">
-          <div className="flex gap-4 md:gap-6 animate-marquee-left whitespace-nowrap py-4">
-            {[...bottomLogos, ...bottomLogos, ...bottomLogos].map((logo, i) => (
-              <div key={i} className="flex items-center justify-center w-[140px] md:w-[220px] h-16 md:h-20 relative opacity-100 transition-transform duration-300 hover:scale-105">
-                <Image
-                  src={logo.src}
-                  alt={logo.name}
-                  fill
-                  sizes="220px"
-                  className="object-contain px-2"
-                />
-              </div>
-            ))}
-          </div>
-          <BlurEdges />
-        </div>
+      <div className="relative w-full px-[5%] space-y-12 md:space-y-16">
+        <VelocityRow logos={topLogos} baseVelocity={2} />
+        <VelocityRow logos={bottomLogos} baseVelocity={-2} />
       </div>
-
-      <style jsx>{`
-        @keyframes marquee-right {
-          0% { transform: translateX(-33.33%); }
-          100% { transform: translateX(0); }
-        }
-        @keyframes marquee-left {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); }
-        }
-        .animate-marquee-right { animation: marquee-right 18s linear infinite; }
-        .animate-marquee-left { animation: marquee-left 22s linear infinite; }
-        .animate-marquee-right:hover, .animate-marquee-left:hover { animation-play-state: paused; }
-      `}</style>
     </section>
   );
 }

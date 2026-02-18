@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 
-// --- DATA UNCHANGED ---
 const cards = [
   { 
     label: "Module 1", 
@@ -96,7 +95,9 @@ export default function DigitalMarketingStack() {
           </span>
           <h2 className="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-[-0.05em]">
             Built for the <br />
-            <span className="text-[#FFC62A] italic font-serif font-light lowercase">High-Growth Demands</span>
+            <span className="text-[#FFC62A] italic font-serif font-light lowercase">
+              High-Growth Demands
+            </span>
           </h2>
         </div>
 
@@ -112,9 +113,9 @@ export default function DigitalMarketingStack() {
                 <div 
                   key={index} 
                   data-index={index}
-                  className={`animate-on-scroll sticky top-24 w-full mb-[200px] last:mb-0 transition-all duration-[800ms] ease-out
+                  className={`animate-on-scroll sticky top-24 w-full mb-[200px] last:mb-0 transition-all duration-[1000ms] ease-[cubic-bezier(0.23,1,0.32,1)]
                     ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20 scale-90"}
-                  `} 
+                  `}
                   style={{ 
                     zIndex: 30 + index,
                     transform: isVisible 
@@ -127,8 +128,8 @@ export default function DigitalMarketingStack() {
                       flex flex-col lg:flex-row
                       rounded-[40px] bg-[#FFF9E6] 
                       shadow-[0_40px_80px_rgba(0,0,0,0.3)] 
-                      overflow-hidden relative transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
-                      ${isExpanded ? "max-h-[1500px]" : "h-[500px] lg:h-[600px]"}
+                      overflow-hidden relative transition-all duration-[1000ms] ease-[cubic-bezier(0.4,0,0.2,1)]
+                      ${isExpanded ? "max-h-[2000px]" : "h-[500px] lg:h-[600px] max-h-[600px]"}
                     `}
                   >
                     {/* LEFT CONTENT PANEL */}
@@ -138,18 +139,18 @@ export default function DigitalMarketingStack() {
                           // 0{index + 1}
                         </span>
                       </div>
-                      
+
                       <h3 className={`mt-8 text-4xl md:text-5xl font-black text-[#212121] leading-[1.0] tracking-tighter mb-6 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                        {card.title.split(' ')[0]} <br/>
+                        {card.title.split(' ')[0]} <br />
                         <span className="text-[#FFC62A] italic font-serif font-light lowercase">
                           {card.title.split(' ').slice(1).join(' ')}
                         </span>
                       </h3>
-                      
+
                       <p className={`text-lg md:text-xl text-[#2F2F2F]/70 leading-relaxed font-medium max-w-lg transition-all duration-700 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                         {card.desc}
                       </p>
-                      
+
                       <div className="mt-10">
                         <button 
                           onClick={() => toggleExpand(index)}
@@ -158,27 +159,35 @@ export default function DigitalMarketingStack() {
                           <span className="border-b-2 border-[#FFC62A] pb-0.5">
                             {isExpanded ? "Collapse Module" : "Explore Curriculum"}
                           </span>
-                          <div className={`transition-transform duration-500 bg-[#212121] text-[#FFC62A] p-1.5 rounded-full ${isExpanded ? 'rotate-180' : ''}`}>
+                          <div className={`transition-transform duration-[900ms] ease-[cubic-bezier(0.4,0,0.2,1)] bg-[#212121] text-[#FFC62A] p-1.5 rounded-full ${isExpanded ? 'rotate-180' : ''}`}>
                             <ChevronDown size={18} />
                           </div>
                         </button>
                       </div>
 
                       {/* EXPANDABLE SECTION */}
-                      <div className={`grid transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] ${isExpanded ? "grid-rows-[1fr] opacity-100 mt-12" : "grid-rows-[0fr] opacity-0 mt-0"}`}>
+                      <div 
+                        className={`grid transition-all duration-[1000ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                          isExpanded ? "grid-rows-[1fr] opacity-100 mt-12" : "grid-rows-[0fr] opacity-0 mt-0"
+                        }`}
+                      >
                         <div className="overflow-hidden">
                           <div className="pt-8 border-t border-[#212121]/10">
                             <p className="text-base md:text-lg text-[#2F2F2F]/80 leading-relaxed font-light mb-8">
                               {card.details}
                             </p>
-                            
+
                             <div className="grid gap-4">
-                              <p className="text-[9px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-2">Strategic Outcomes</p>
+                              <p className="text-[9px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-2">
+                                Strategic Outcomes
+                              </p>
                               <div className="grid md:grid-cols-2 gap-4">
                                 {card.points.map((point, i) => (
                                   <div key={i} className="flex items-center gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#FFC62A]" />
-                                    <p className="text-base text-[#212121] font-bold tracking-tight">{point}</p>
+                                    <div className="w-1.5 h-1.5 rounded-full bg-[#FFC62A]" />  
+                                    <p className="text-base text-[#212121] font-bold tracking-tight">
+                                      {point}
+                                    </p>
                                   </div>
                                 ))}
                               </div>
@@ -194,7 +203,9 @@ export default function DigitalMarketingStack() {
                         src={card.image} 
                         alt={card.title} 
                         fill 
-                        className={`object-cover transition-all duration-1000 ease-in-out ${isExpanded ? "scale-110 saturate-[0.2] blur-[2px] opacity-40" : "scale-100"}`} 
+                        className={`object-cover transition-all duration-[1200ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                          isExpanded ? "scale-110 saturate-[0.2] blur-[4px] opacity-40" : "scale-100"
+                        }`} 
                       />
                       <div className="absolute inset-0 bg-gradient-to-r from-[#FFF9E6] via-transparent to-transparent hidden lg:block" />
                     </div>
@@ -205,24 +216,6 @@ export default function DigitalMarketingStack() {
           </div>
         </div>
       </section>
-
-      {/* WHITE SECTOR - REPOSITIONED CONTENT */}
-      <section className="bg-white min-h-[60vh] pt-24 pb-48 px-[5%] border-b border-gray-100">
-        <div className="max-w-[1400px] mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-black text-[#212121] tracking-tighter mb-8 leading-[0.95]">
-                Ready to <br/>
-                <span className="italic font-serif font-light text-[#365c47] lowercase">transform?</span>
-            </h2>
-            <p className="text-lg md:text-xl text-gray-500 max-w-xl mx-auto font-light leading-relaxed">
-                Join 500+ professionals who have upskilled through our industry-vetted curriculum and hands-on case studies.
-            </p>
-        </div>
-      </section>
-
-      {/* LARGE EMPTY BLACK SECTOR */}
-      <section className="bg-[#212121] min-h-[90vh] w-full flex items-center justify-center">
-        {/* Empty minimalist sector */}
-      </section>
     </>
-  ); 
+  );
 }

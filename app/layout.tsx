@@ -24,7 +24,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
-// Add these variables to your body className
-// <body className={`${inter.variable} ${instrument.variable}`}>

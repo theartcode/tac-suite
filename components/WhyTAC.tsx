@@ -20,7 +20,7 @@ export default function PortfolioProof() {
         {/* Heading Section */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter leading-[0.85]">
-            Your Portfolio,
+            Why TAC?,
             <span className="block font-serif italic font-light text-[#365c47] lowercase mt-1">
               Built on Real Proof of Work
             </span>

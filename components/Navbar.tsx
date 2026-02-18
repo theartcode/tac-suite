@@ -10,7 +10,6 @@ const navItems = [
   "Services",
   "Portfolio",
   "Testimonials",
-  "Contact",
 ];
 
 export default function Navbar() {
