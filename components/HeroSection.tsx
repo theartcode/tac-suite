@@ -499,7 +499,7 @@ const closeModal = () => {
   return (
     <>
       <section
-        className="min-h-screen bg-[#FBF8E4] text-[#1A1A1A] flex pt-[70px] overflow-x-hidden"
+        className="min-h-screen bg-[#FBF8E4] text-[#1A1A1A] flex flex-col lg:flex-row pt-[70px] pb-16 lg:pb-0 overflow-x-hidden"
         style={{ marginLeft: "-1px" }}
       >
         {/* ══ LEFT CONTENT ══ */}
@@ -511,9 +511,9 @@ const closeModal = () => {
           </p>
 
           <h1 className="leading-[1.0] font-black tracking-tight uppercase">
-            <span className="block text-[50px] md:text-[75px]">LEARN</span>
-            <span className="block text-[50px] md:text-[75px] text-[#FFC62A]">8 SKILLS.</span>
-            <span className="block text-[50px] md:text-[75px] text-transparent" style={{ WebkitTextStroke: "1.5px rgba(26,26,26,0.2)" }}>
+            <span className="block text-[42px] sm:text-[50px] md:text-[75px]">LEARN</span>
+            <span className="block text-[42px] sm:text-[50px] md:text-[75px] text-[#FFC62A]">8 SKILLS.</span>
+            <span className="block text-[42px] sm:text-[50px] md:text-[75px] text-transparent" style={{ WebkitTextStroke: "1.5px rgba(26,26,26,0.2)" }}>
               ONE COURSE.
             </span>
           </h1>
@@ -534,14 +534,14 @@ const closeModal = () => {
             </div>
 
             {/* STATS */}
-            <div className="flex items-center gap-6 md:gap-8 border-t border-[#1D1D1D]/10 pt-8 max-w-xl">
+            <div className="grid grid-cols-2 gap-y-6 gap-x-8 md:flex md:items-center md:gap-8 border-t border-[#1D1D1D]/10 pt-8 max-w-xl">
               {[
                 { val: "5",    label: "Cohorts Done" },
                 { val: "₹30K", label: "Avg Package" },
                 { val: "10",   label: "Portfolio" },
                 { val: "8",    label: "Skills" },
               ].map((s, i) => (
-                <li key={s.label} className="flex items-center gap-6 md:gap-8">
+                <div key={s.label} className="flex items-center justify-between">
                   <div className="flex flex-col">
                     <span className="text-[32px] md:text-[40px] font-black leading-none text-[#FFC62A]">
                       {s.val}
@@ -550,16 +550,16 @@ const closeModal = () => {
                       {s.label}
                     </span>
                   </div>
-
-                  {i < 3 && <div className="w-[1px] h-10 bg-[#1D1D1D]/10" />}
-                </li>
+                  {/* Divider — only on desktop */}
+                  {i < 3 && <div className="hidden md:block w-[1px] h-10 bg-[#1D1D1D]/10 ml-8" />}
+                </div>
               ))}
             </div>
           </div>
         </div>
 
         {/* ══ RIGHT: TV + STRIPS ══ */}
-        <div className="hidden lg:flex flex-col justify-center items-center w-full lg:w-1/2 shrink-0 gap-8">
+        <div className="flex flex-col justify-center items-center w-full lg:w-1/2 shrink-0 gap-8 mt-12 lg:mt-0 px-[6%] lg:px-0">
 
           {/* TOP STRIP — right to left */}
           <InfiniteStrip items={topStripItems} direction="left" speed={30} />

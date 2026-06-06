@@ -1,6 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { Bebas_Neue } from "next/font/google";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/footer";
+
+const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const stats = [
   { num: "2000+", label: "CREATORS BUILT" },
@@ -55,148 +63,108 @@ export default function AboutPage() {
   };
 
   return (
-    <main
-      style={{
-        background: "#0D0D0D",
-        color: "#EDEDED",
-        minHeight: "100vh",
-        fontFamily: "'Inter', sans-serif",
-        padding: "80px 8%",
-      }}
-    >
-      {/* HERO */}
-      <section style={{ maxWidth: 900, marginBottom: 100 }}>
-        <h1 style={{ fontFamily: "Bebas Neue", fontSize: "88px" }}>
-          WE BUILD <br /> <span style={{ color: "#C9A227" }}>CREATORS</span>
-        </h1>
-      </section>
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-[#0D0D0D] text-[#EDEDED] font-sans pt-[120px] pb-24 px-[6%] md:px-[8%]">
+        {/* HERO */}
+        <section className="max-w-[900px] mb-16 md:mb-24">
+          <h1 className={`${bebas.className} text-[56px] sm:text-[72px] md:text-[88px] leading-[0.95]`}>
+            WE BUILD <br /> <span style={{ color: "#C9A227" }}>CREATORS</span>
+          </h1>
+        </section>
 
-      {/* STATS */}
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-          gap: 30,
-          marginBottom: 120,
-        }}
-      >
-        {stats.map((s) => (
-          <div
-            key={s.label}
-            style={{
-              padding: 30,
-              borderRadius: 16,
-              background: "#111",
-              border: "1px solid rgba(255,255,255,0.08)",
-              textAlign: "center",
-            }}
-          >
-            <h3 style={{ fontSize: 40, color: "#C9A227" }}>{s.num}</h3>
-            <p style={{ fontSize: 12, color: "#777" }}>{s.label}</p>
-          </div>
-        ))}
-      </section>
-
-      {/* PILLARS */}
-      <section style={{ marginBottom: 120 }}>
-        <h2 style={{ fontFamily: "Bebas Neue", fontSize: "48px" }}>
-          WHAT MAKES US DIFFERENT
-        </h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: 30,
-          }}
-        >
-          {pillars.map((p) => (
+        {/* STATS */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 md:mb-28">
+          {stats.map((s) => (
             <div
-              key={p.title}
-              style={{
-                background: "#111",
-                padding: 30,
-                borderRadius: 16,
-              }}
+              key={s.label}
+              className="p-8 rounded-[16px] bg-[#111] border border-white/5 text-center hover:border-[#C9A227]/30 transition duration-300"
             >
-              <h3 style={{ color: "#C9A227" }}>{p.title}</h3>
-              <p style={{ color: "#aaa" }}>{p.desc}</p>
+              <h3 className="text-4xl font-extrabold text-[#C9A227] mb-2">{s.num}</h3>
+              <p className="text-xs text-white/50 tracking-[1px] uppercase font-medium">{s.label}</p>
             </div>
           ))}
-        </div>
-      </section>
+        </section>
 
-      {/* FORM SECTION */}
-      <section
-        style={{
-          background: "#111",
-          padding: "60px",
-          borderRadius: 20,
-          border: "1px solid rgba(255,255,255,0.08)",
-          maxWidth: 600,
-          margin: "0 auto",
-        }}
-      >
-        {submitted ? (
-          <div style={{ textAlign: "center" }}>
-            <h2 style={{ fontSize: 36, marginBottom: 10 }}>🎉 You're In!</h2>
-            <p style={{ color: "#aaa" }}>We’ll contact you soon.</p>
-          </div>
-        ) : (
-          <>
-            <h2 style={{ fontFamily: "Bebas Neue", fontSize: 42 }}>
-              GET STARTED
-            </h2>
+        {/* PILLARS */}
+        <section className="mb-20 md:mb-28">
+          <h2 className={`${bebas.className} text-[36px] md:text-[48px] tracking-wide mb-8`}>
+            WHAT MAKES US DIFFERENT
+          </h2>
 
-            <p style={{ color: "#aaa", marginBottom: 30 }}>
-              Fill your details and begin your journey.
-            </p>
-
-            <form
-              onSubmit={handleSubmit}
-              style={{ display: "flex", flexDirection: "column", gap: 16 }}
-            >
-              <input name="name" placeholder="Full Name" onChange={handleChange} required className="input" />
-              <input name="email" type="email" placeholder="Email" onChange={handleChange} required className="input" />
-              <input name="phone" placeholder="Phone" onChange={handleChange} required className="input" />
-
-              <div style={{ display: "flex", gap: 10 }}>
-                <input name="age" type="number" placeholder="Age" onChange={handleChange} required className="input" />
-                <input name="qualification" placeholder="Qualification" onChange={handleChange} required className="input" />
-              </div>
-
-              <button
-                type="submit"
-                disabled={loading}
-                style={{
-                  background: "#C9A227",
-                  color: "#000",
-                  padding: "14px",
-                  fontWeight: "bold",
-                  cursor: "pointer",
-                  marginTop: 10,
-                }}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {pillars.map((p) => (
+              <div
+                key={p.title}
+                className="bg-[#111] p-8 rounded-[16px] border border-white/5 hover:border-[#C9A227]/30 transition duration-300"
               >
-                {loading ? "Submitting..." : "Submit Application"}
-              </button>
-            </form>
-          </>
-        )}
-      </section>
+                <h3 className="text-[#C9A227] font-bold text-lg mb-3 tracking-wide">{p.title}</h3>
+                <p className="text-white/60 text-sm leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* FORM SECTION */}
+        <section className="w-full max-w-[600px] mx-auto bg-[#111] p-6 sm:p-10 md:p-[60px] rounded-[20px] border border-white/5 shadow-2xl">
+          {submitted ? (
+            <div className="text-center py-8">
+              <h2 className="text-3xl font-bold mb-3">🎉 You&apos;re In!</h2>
+              <p className="text-white/60">We&apos;ll contact you soon.</p>
+            </div>
+          ) : (
+            <>
+              <h2 className={`${bebas.className} text-[36px] md:text-[42px] tracking-wide mb-2`}>
+                GET STARTED
+              </h2>
+
+              <p className="text-white/50 text-xs uppercase tracking-[2px] mb-8">
+                Fill your details and begin your journey.
+              </p>
+
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col gap-4"
+              >
+                <input name="name" placeholder="Full Name" onChange={handleChange} required className="input" />
+                <input name="email" type="email" placeholder="Email Address" onChange={handleChange} required className="input" />
+                <input name="phone" placeholder="Phone Number" onChange={handleChange} required className="input" />
+
+                <div className="flex gap-4">
+                  <input name="age" type="number" placeholder="Age" onChange={handleChange} required className="input w-1/3" />
+                  <input name="qualification" placeholder="Qualification" onChange={handleChange} required className="input w-2/3" />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="bg-[#C9A227] text-black py-4 font-bold text-sm tracking-[2px] uppercase mt-4 hover:bg-[#FFE8A3] active:scale-95 transition-all duration-200"
+                >
+                  {loading ? "Submitting..." : "Submit Application"}
+                </button>
+              </form>
+            </>
+          )}
+        </section>
+      </main>
+      <Footer />
 
       <style jsx>{`
         .input {
-          padding: 12px;
+          padding: 12px 16px;
           background: #0d0d0d;
           border: 1px solid rgba(255, 255, 255, 0.1);
           color: white;
           outline: none;
+          border-radius: 4px;
+          font-size: 14px;
+          transition: border-color 0.2s;
         }
 
         .input:focus {
           border-color: #c9a227;
         }
       `}</style>
-    </main>
+    </>
   );
 }

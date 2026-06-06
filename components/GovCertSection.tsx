@@ -20,7 +20,7 @@ export function GovCertSection() {
           Government Certified Institution
         </h2>
 
-        <div className="grid grid-cols-3 gap-0">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-0">
           {certs.map((cert, i) => (
             <motion.div
               key={i}

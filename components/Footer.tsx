@@ -8,10 +8,10 @@ export function Footer() {
 
       {/* TOP ROW */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-5">
-        <h2 className="text-xl tracking-[3px] font-semibold">
+        <h2 className="text-lg md:text-xl tracking-[2px] md:tracking-[3px] font-semibold">
           <span className="text-[#C9A227]">TAC  </span> School of Modern Learning Private Limited
         </h2>
-        <div className="flex gap-8 text-sm tracking-[3px] uppercase text-white/60">
+        <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm tracking-[2px] md:tracking-[3px] uppercase text-white/60">
           <a href="https://www.instagram.com/tac_theartcode?igsh=dTk2NGpvb2ZoZmVx" target="_blank" rel="noreferrer" className="hover:text-[#C9A227] transition">Instagram</a>
           <a href="https://www.linkedin.com/company/tac-the-art-code/" target="_blank" rel="noreferrer" className="hover:text-[#C9A227] transition">LinkedIn</a>
           <a href="https://www.youtube.com/@the_artcode" target="_blank" rel="noreferrer" className="hover:text-[#C9A227] transition">YouTube</a>

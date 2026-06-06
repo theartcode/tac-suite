@@ -20,19 +20,12 @@ export function IndustriesSection() {
     <section className="bg-[#1A1A1A] text-[#f7f1e4] px-[6%] py-28">
 
       {/* TOP */}
-      <div className="grid md:grid-cols-2 gap-10 items-start mb-30">
-        <div className="flex items-center">
-          <p className="text-[#f7f1e4]/90 text-xl max-w-sm leading-relaxed">
-            One project per industry. No repeats. That portfolio is what gets you the job or the client.
-          </p>
-        </div>
-
-        <div className="text-right">
+      <div className="grid md:grid-cols-2 gap-10 items-start mb-16 md:mb-30">
+        {/* TITLE */}
+        <div className="text-left md:text-right md:order-2">
           <h2
-            className="uppercase font-bebas"
+            className="uppercase font-bebas text-[48px] sm:text-[62px] md:text-[76px] leading-[44px] sm:leading-[58px] md:leading-[72.2px]"
             style={{
-              fontSize: "76px",
-              lineHeight: "72.2px",
               fontWeight: 700,
               letterSpacing: "0.5px",
               fontFamily: "'Bebas Neue', sans-serif",
@@ -43,11 +36,18 @@ export function IndustriesSection() {
             ONE STUDENT.
           </h2>
         </div>
+
+        {/* DESC */}
+        <div className="flex items-center md:order-1">
+          <p className="text-[#f7f1e4]/90 text-lg md:text-xl max-w-sm leading-relaxed">
+            One project per industry. No repeats. That portfolio is what gets you the job or the client.
+          </p>
+        </div>
       </div>
 
       {/* BADGE */}
-      <div className="mb-10">
-        <span className="border border-[#FFC62A]/40 text-[#FFC62A] px-4 py-2 text-xs tracking-[3px] uppercase">
+      <div className="mb-10 flex flex-wrap">
+        <span className="border border-[#FFC62A]/40 text-[#FFC62A] px-3 py-2 md:px-4 md:py-2 text-[9px] sm:text-xs tracking-[2px] md:tracking-[3px] uppercase inline-block">
           ★ FIRST IN INDIA – 10-INDUSTRY PORTFOLIO CERTIFICATION
         </span>
       </div>

@@ -24,12 +24,10 @@ export function PlacementSection() {
         </div>
 
         {/* RIGHT TITLE */}
-        <div className="text-right">
+        <div className="text-left md:text-right">
           <h2
-            className={`${bebas.className} uppercase text-[#111]`}
+            className={`${bebas.className} uppercase text-[#111] text-[52px] sm:text-[64px] md:text-[76px] leading-[48px] sm:leading-[60px] md:leading-[72px]`}
             style={{
-              fontSize: "76px",
-              lineHeight: "72px",
               letterSpacing: "0.5px",
             }}
           >
@@ -37,7 +35,7 @@ export function PlacementSection() {
             REAL MONEY.
           </h2>
 
-          <p className="text-black/50 text-sm mt-3 max-w-md ml-auto">
+          <p className="text-black/50 text-sm mt-3 max-w-md ml-0 md:ml-auto">
             Numbers from Cohort 1 and 2. Both cohorts placed successfully within 60 days of completion.
           </p>
         </div>
@@ -45,7 +43,7 @@ export function PlacementSection() {
       </div>
 
       {/* STATS GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-black/10 rounded-[24px] overflow-hidden">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[1px] bg-black/10 rounded-[24px] overflow-hidden">
 
         {[
           { value: "6", label: "BATCHES COMPLETED" },

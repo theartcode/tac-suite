@@ -86,7 +86,7 @@ export function SkillsSection() {
       {/* BACKGROUND TAC TEXT - INCREASED VISIBILITY WITH SHADOW */}
       <div className="absolute right-[6%] top-[90px] pointer-events-none z-0 text-right">
         <h1 
-          className="font-bebas text-[220px] leading-none select-none"
+          className="font-bebas text-[110px] sm:text-[180px] md:text-[220px] leading-none select-none"
           style={{
             color: "#1D1D1D",
             opacity: 0.12,
@@ -116,10 +116,8 @@ export function SkillsSection() {
         </div>
 
         <h2
-          className="font-bebas tracking-[0.5px] uppercase"
+          className="font-bebas tracking-[0.5px] uppercase text-[48px] sm:text-[62px] md:text-[76px] leading-[44px] sm:leading-[58px] md:leading-[72.2px]"
           style={{
-            fontSize: "76px",
-            lineHeight: "72.2px",
             fontWeight: "700",
             fontFamily: "'Bebas Neue', sans-serif",
           }}
@@ -131,7 +129,7 @@ export function SkillsSection() {
       </div>
 
       {/* GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 relative z-10 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 relative z-10 mt-6">
 
         {skills.map((skill, i) => (
           <motion.div

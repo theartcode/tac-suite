@@ -169,7 +169,7 @@ export function Navbar() {
             {/* APPLY BUTTON */}
             <button
               onClick={() => setOpen(true)}
-              className={`bg-[#FFC62A] text-black font-black tracking-[2px] rounded-sm hover:bg-[#FFE8A3] active:scale-95 transition-all duration-200 ${
+              className={`hidden md:block bg-[#FFC62A] text-black font-black tracking-[2px] rounded-sm hover:bg-[#FFE8A3] active:scale-95 transition-all duration-200 ${
                 isCompact ? "px-5 py-2 text-[10px]" : "px-8 py-3 text-[11px]"
               }`}
             >
@@ -207,7 +207,9 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25 }}
-            className="fixed top-[65px] left-0 w-full z-40 bg-black/85 backdrop-blur-xl border-b border-white/10 flex flex-col items-center gap-0 lg:hidden"
+            className={`fixed left-0 w-full z-40 bg-black/85 backdrop-blur-xl border-b border-white/10 flex flex-col items-center gap-0 lg:hidden transition-all duration-300 ${
+              isCompact ? "top-[65px]" : "top-[85px]"
+            }`}
           >
             {NAV_LINKS.map(({ label, href }, i) => (
               <motion.a

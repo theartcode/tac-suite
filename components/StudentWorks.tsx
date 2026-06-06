@@ -595,15 +595,13 @@ export function StudentWorks() {
       <section className="w-full py-24 flex flex-col items-center gap-12">
 
         {/* ── Header block ── */}
-        <div className="flex flex-col items-center gap-3">
+        <div className="flex flex-col items-center gap-3 px-4">
           <h2
-            className="uppercase text-center"
+            className="uppercase text-center text-[48px] sm:text-[64px] md:text-[80px] leading-[48px] sm:leading-[60px] md:leading-[80px]"
             style={{
               fontFamily: "Bebas Neue",
-              fontSize: "80px",
               letterSpacing: "1px",
               fontWeight: 700,
-              lineHeight: 1,
               margin: 0,
             }}
           >
@@ -626,7 +624,7 @@ export function StudentWorks() {
         </div>
 
         {/* ── Gallery ── */}
-        <div className="w-full" style={{ height: "600px" }}>
+        <div className="w-full h-[400px] md:h-[600px]">
           <CircularGallery
             items={galleryItems}
             bend={3}

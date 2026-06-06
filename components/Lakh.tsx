@@ -99,10 +99,8 @@ export function ChallengeSection() {
             </p>
 
             <h2
-              className={`${bebas.className} uppercase text-[#111] mb-6`}
+              className={`${bebas.className} uppercase text-[#111] mb-6 text-[56px] sm:text-[76px] md:text-[110px] leading-[52px] sm:leading-[72px] md:leading-[100px]`}
               style={{
-                fontSize: "110px",
-                lineHeight: "100px",
                 letterSpacing: "1px",
               }}
             >
@@ -124,7 +122,7 @@ export function ChallengeSection() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
                 num: "01",

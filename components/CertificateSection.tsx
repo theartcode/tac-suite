@@ -10,11 +10,9 @@ export function CertificateSection() {
         {/* LEFT TITLE */}
         <div>
           <h2
-            className="font-bebas uppercase text-[#F7F1E4] tracking-wide 
+            className="font-bebas uppercase text-[#F7F1E4] tracking-wide text-[40px] sm:text-[50px] md:text-[60px] leading-[44px] sm:leading-[54px] md:leading-[64px]
             drop-shadow-[0_2px_10px_rgba(255,255,255,0.08)]"
             style={{
-              fontSize: "60px",
-              lineHeight: "64px",
               letterSpacing: "1px",
               fontWeight: 700,
             }}
@@ -62,7 +60,7 @@ export function CertificateSection() {
           </p>
 
           {/* INFO GRID */}
-          <div className="grid grid-cols-3 gap-4 text-xs text-white/60 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-white/60 mb-8">
             <div>
               <p className="text-white/30">Issued By</p>
               <p className="text-[#FFC62A]">THE ART CODE</p>

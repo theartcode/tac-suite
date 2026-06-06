@@ -55,6 +55,7 @@ function BottomCarousel() {
     "/students/18.png",
     "/students/20.png",
     "/students/23.png",
+    "/students/24.png",
   ];
 
   return (
@@ -86,10 +87,8 @@ export function SimpleInfiniteCarousel() {
         </p>
 
         <h2
-          className={`${bebas.className} uppercase text-[#111]`}
+          className={`${bebas.className} uppercase text-[#111] text-[52px] sm:text-[64px] md:text-[76px] leading-[48px] sm:leading-[60px] md:leading-[72px]`}
           style={{
-            fontSize: "76px",
-            lineHeight: "72px",
             letterSpacing: "0.5px",
           }}
         >
@@ -127,10 +126,14 @@ export function SimpleInfiniteCarousel() {
 
         .carousel-img {
           flex-shrink: 0;
-          max-height: 240px;
+          height: 160px;
           width: auto;
-          height: auto;
           object-fit: contain;
+        }
+        @media (min-width: 768px) {
+          .carousel-img {
+            height: 240px;
+          }
         }
       `}</style>
 
