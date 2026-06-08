@@ -28,7 +28,7 @@ const pillars = [
   },
   {
     title: "CREATOR MINDSET",
-    desc: "Learn how to create content that performs and grows.",
+    desc: "Learn how to create content that performs and grows..",
   },
   {
     title: "INDUSTRY SYSTEM",
