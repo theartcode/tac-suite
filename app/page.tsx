@@ -9,7 +9,7 @@ import { PlacementSection } from "@/components/RealJobs";
 import PeopleSection from "@/components/Placed";
 import { PartnersSection } from "@/components/Rectangles";
 import { ChallengeSection } from "@/components/Lakh";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/Footer";
 import { StudentWorks } from "@/components/StudentWorks";
 import TutorsSection from "@/components/Tutors";
 
