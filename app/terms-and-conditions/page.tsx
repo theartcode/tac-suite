@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/footer";
+﻿import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const css = `
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
@@ -396,7 +396,7 @@ export default function TermsAndConditionsPage() {
 
             <div className="tac-tc-clause">
               <div className="tac-tc-clause-num">1.1</div>
-              <p>These Terms and Conditions (hereinafter referred to as the &ldquo;Agreement&rdquo; or &ldquo;Terms&rdquo;) constitute a legally enforceable agreement between TAC School of Modern Learning Private Limited, a company incorporated under the Companies Act, 2013, having its registered office at Madhapur, Hyderabad – 500081, Telangana, India, operating under the trade name &ldquo;The Art Code&rdquo; / &ldquo;TAC&rdquo;, and any natural person, legal entity, or institution that accesses, registers on, subscribes to, or otherwise uses any of TAC&rsquo;s services, platforms, or products (hereinafter referred to as &ldquo;User&rdquo;, &ldquo;Subscriber&rdquo;, &ldquo;Student&rdquo;, or &ldquo;You&rdquo;).</p>
+              <p>These Terms and Conditions (hereinafter referred to as the &ldquo;Agreement&rdquo; or &ldquo;Terms&rdquo;) constitute a legally enforceable agreement between TAC School of Modern Learning Private Limited, a company incorporated under the Companies Act, 2013, having its registered office at Madhapur, Hyderabad â€“ 500081, Telangana, India, operating under the trade name &ldquo;The Art Code&rdquo; / &ldquo;TAC&rdquo;, and any natural person, legal entity, or institution that accesses, registers on, subscribes to, or otherwise uses any of TAC&rsquo;s services, platforms, or products (hereinafter referred to as &ldquo;User&rdquo;, &ldquo;Subscriber&rdquo;, &ldquo;Student&rdquo;, or &ldquo;You&rdquo;).</p>
             </div>
             <div className="tac-tc-clause">
               <div className="tac-tc-clause-num">1.2</div>
@@ -407,7 +407,7 @@ export default function TermsAndConditionsPage() {
               <p>This Agreement is an electronic record within the meaning of Section 2(1)(t) of the Information Technology Act, 2000 and has been formulated in accordance with the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021. This Agreement does not require any physical or digital signature to be legally binding upon the parties.</p>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">1.4 — Acceptance by Conduct</div>
+              <div className="tac-tc-clause-num">1.4 â€” Acceptance by Conduct</div>
               <p>By performing any of the following acts, You conclusively acknowledge that You have read, understood, and unconditionally agreed to be legally bound by this Agreement and the entire TAC Legal Framework:</p>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">(a)</span><span>Accessing the TAC website at www.theartcode.org or any subdomain thereof;</span></li>
@@ -425,18 +425,18 @@ export default function TermsAndConditionsPage() {
           <section className="tac-tc-section" id="s2">
             <div className="tac-tc-section-num">Section 02</div>
             <h2>Definitions</h2>
-            <p>2.1 — Unless the context otherwise requires, the following expressions shall have the meanings ascribed to them below:</p>
+            <p>2.1 â€” Unless the context otherwise requires, the following expressions shall have the meanings ascribed to them below:</p>
             <div className="tac-tc-def-grid">
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Agreement</div><div className="tac-tc-def-meaning">These Terms and Conditions as updated from time to time, together with all schedules, annexures, and documents incorporated by reference.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Applicable Law</div><div className="tac-tc-def-meaning">All central, state, and local laws applicable in India, including the IT Act 2000, Consumer Protection Act 2019, Indian Contract Act 1872, Copyright Act 1957, Trade Marks Act 1999, Digital Personal Data Protection Act 2023, Bharatiya Nyaya Sanhita 2023, and the GST Act 2017.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Bundle Plan</div><div className="tac-tc-def-meaning">Any pre-paid multi-month subscription plan (3-month, 6-month, or 12-month) offered by TAC at a consolidated discounted price, as described in Clause 7.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Content</div><div className="tac-tc-def-meaning">All materials made available through the TAC Platform, including video recordings, live streams, audio, course notes, scripts, templates, source files, graphics, design assets, software tools, text, and any other intellectual or creative work.</div></div>
-              <div className="tac-tc-def-row"><div className="tac-tc-def-term">Creator Pass</div><div className="tac-tc-def-meaning">TAC&rsquo;s premium all-access subscription plan at ₹2,999 per month (inclusive of GST), providing full access to the TAC Platform.</div></div>
-              <div className="tac-tc-def-row"><div className="tac-tc-def-term">Force Majeure Event</div><div className="tac-tc-def-meaning">Any event beyond the reasonable control of a party — including acts of God, natural disasters, pandemics, government lockdowns, acts of war or terrorism, or internet infrastructure failures caused by third parties.</div></div>
+              <div className="tac-tc-def-row"><div className="tac-tc-def-term">Creator Pass</div><div className="tac-tc-def-meaning">TAC&rsquo;s premium all-access subscription plan at â‚¹2,999 per month (inclusive of GST), providing full access to the TAC Platform.</div></div>
+              <div className="tac-tc-def-row"><div className="tac-tc-def-term">Force Majeure Event</div><div className="tac-tc-def-meaning">Any event beyond the reasonable control of a party â€” including acts of God, natural disasters, pandemics, government lockdowns, acts of war or terrorism, or internet infrastructure failures caused by third parties.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">GST</div><div className="tac-tc-def-meaning">Goods and Services Tax as levied under the Central Goods and Services Tax Act, 2017 and the Integrated Goods and Services Tax Act, 2017.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Intellectual Property Rights</div><div className="tac-tc-def-meaning">All patents, copyrights, database rights, design rights, trade marks, trade secrets, know-how, moral rights, and all other intellectual or industrial property rights, whether registered or unregistered, subsisting anywhere in the world.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">JODO</div><div className="tac-tc-def-meaning">Jodo Financial Solutions Private Limited, TAC&rsquo;s authorised payment gateway and recurring payment service provider, operating the Jodo Flex platform at www.jodo.in.</div></div>
-              <div className="tac-tc-def-row"><div className="tac-tc-def-term">Module Pass</div><div className="tac-tc-def-meaning">TAC&rsquo;s limited-access subscription plan at ₹499 per month (inclusive of GST), providing access to the Modules section of the TAC Platform only.</div></div>
+              <div className="tac-tc-def-row"><div className="tac-tc-def-term">Module Pass</div><div className="tac-tc-def-meaning">TAC&rsquo;s limited-access subscription plan at â‚¹499 per month (inclusive of GST), providing access to the Modules section of the TAC Platform only.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Platform</div><div className="tac-tc-def-meaning">TAC&rsquo;s digital learning platform accessible at www.theartcode.org and through any associated mobile applications, including all features, tools, Content, and community functionalities.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Services</div><div className="tac-tc-def-meaning">Collectively: Creator Pass, Module Pass, SAT DROP Webinars, Bootcamps, TAC Suite offline programme, DM Offline Batches, DM Online (College Programme), and any other products or services offered by TAC from time to time.</div></div>
               <div className="tac-tc-def-row"><div className="tac-tc-def-term">Subscription Mandate</div><div className="tac-tc-def-meaning">The standing authorisation granted by the User to JODO to debit the applicable subscription fee from the User&rsquo;s registered payment instrument on each Billing Date without requiring further action from the User.</div></div>
@@ -462,7 +462,7 @@ export default function TermsAndConditionsPage() {
             <h2>Eligibility to Use TAC Services</h2>
 
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">3.1 — You must satisfy all of the following eligibility criteria:</div>
+              <div className="tac-tc-clause-num">3.1 â€” You must satisfy all of the following eligibility criteria:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">3.1.1</span><span>You are a natural person who is at least eighteen (18) years of age, or between sixteen (16) and eighteen (18) years of age accessing the Platform with the express, verified, and documented consent of a parent or legal guardian;</span></li>
                 <li><span className="sub-num">3.1.2</span><span>You have the full legal capacity to enter into binding contracts under the Indian Contract Act, 1872;</span></li>
@@ -487,9 +487,9 @@ export default function TermsAndConditionsPage() {
             <h2>User Account Registration</h2>
 
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">4.1 — By creating a User Account, You represent and warrant the following:</div>
+              <div className="tac-tc-clause-num">4.1 â€” By creating a User Account, You represent and warrant the following:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
-                <li><span className="sub-num">4.1.1</span><span>All information provided during registration — including your full legal name, email address, mobile telephone number, and any other details requested — is accurate, complete, current, and not misleading;</span></li>
+                <li><span className="sub-num">4.1.1</span><span>All information provided during registration â€” including your full legal name, email address, mobile telephone number, and any other details requested â€” is accurate, complete, current, and not misleading;</span></li>
                 <li><span className="sub-num">4.1.2</span><span>You will promptly update your User Account information to ensure it remains accurate and current at all times;</span></li>
                 <li><span className="sub-num">4.1.3</span><span>You have not previously been the holder of a User Account terminated by TAC for breach of this Agreement or any predecessor policy;</span></li>
                 <li><span className="sub-num">4.1.4</span><span>You will not create more than one (1) User Account unless expressly authorised in writing by TAC; and</span></li>
@@ -497,7 +497,7 @@ export default function TermsAndConditionsPage() {
               </ul>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">4.2 — User Accounts are strictly personal and non-transferable. You shall not:</div>
+              <div className="tac-tc-clause-num">4.2 â€” User Accounts are strictly personal and non-transferable. You shall not:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">4.2.1</span><span>Share your login credentials (username, password, OTP, or any authentication token) with any other person, whether for payment or otherwise;</span></li>
                 <li><span className="sub-num">4.2.2</span><span>Allow any other person to access the Platform using your User Account;</span></li>
@@ -535,45 +535,45 @@ export default function TermsAndConditionsPage() {
             <div className="tac-tc-section-num">Section 05</div>
             <h2>Description of Services</h2>
 
-            <p className="tac-tc-sub-heading">5.1.1 — Digital Subscription Services</p>
+            <p className="tac-tc-sub-heading">5.1.1 â€” Digital Subscription Services</p>
             <div className="tac-tc-services-grid">
               <div className="tac-tc-service-card">
-                <div className="tac-tc-service-card-icon">🎨</div>
+                <div className="tac-tc-service-card-icon">ðŸŽ¨</div>
                 <div className="tac-tc-service-card-type">Monthly Subscription</div>
                 <div className="tac-tc-service-card-name">Creator Pass</div>
-                <div className="tac-tc-service-card-price">₹2,999 / month</div>
-                <div className="tac-tc-service-card-desc">Unlimited access to all Content — live &amp; recorded courses, Modules, archived webinar replays, TAC Gateway, T-Shaped Portfolio roadmap, community features, and all future Content drops.</div>
+                <div className="tac-tc-service-card-price">â‚¹2,999 / month</div>
+                <div className="tac-tc-service-card-desc">Unlimited access to all Content â€” live &amp; recorded courses, Modules, archived webinar replays, TAC Gateway, T-Shaped Portfolio roadmap, community features, and all future Content drops.</div>
               </div>
               <div className="tac-tc-service-card">
-                <div className="tac-tc-service-card-icon">📦</div>
+                <div className="tac-tc-service-card-icon">ðŸ“¦</div>
                 <div className="tac-tc-service-card-type">Monthly Subscription</div>
                 <div className="tac-tc-service-card-name">Module Pass</div>
-                <div className="tac-tc-service-card-price">₹499 / month</div>
+                <div className="tac-tc-service-card-price">â‚¹499 / month</div>
                 <div className="tac-tc-service-card-desc">Access exclusively to the Modules section only. Creator Pass, live webinars, TAC Gateway, and archived course videos are not accessible under this plan.</div>
               </div>
               <div className="tac-tc-service-card">
-                <div className="tac-tc-service-card-icon">🎙️</div>
+                <div className="tac-tc-service-card-icon">ðŸŽ™ï¸</div>
                 <div className="tac-tc-service-card-type">Single-Session Purchase</div>
                 <div className="tac-tc-service-card-name">SAT DROP Webinar</div>
-                <div className="tac-tc-service-card-price">₹149 / session</div>
+                <div className="tac-tc-service-card-price">â‚¹149 / session</div>
                 <div className="tac-tc-service-card-desc">Access to one live webinar event on a specified date, plus a 48-hour replay window from the conclusion of the live event. One-time purchase; no recurring subscription.</div>
               </div>
               <div className="tac-tc-service-card">
-                <div className="tac-tc-service-card-icon">🚀</div>
+                <div className="tac-tc-service-card-icon">ðŸš€</div>
                 <div className="tac-tc-service-card-type">Single-Event Purchase</div>
                 <div className="tac-tc-service-card-name">Bootcamp</div>
-                <div className="tac-tc-service-card-price">₹999 / bootcamp</div>
+                <div className="tac-tc-service-card-price">â‚¹999 / bootcamp</div>
                 <div className="tac-tc-service-card-desc">Access to a specific three-day live intensive programme. Access is limited to the specific bootcamp for which payment is made.</div>
               </div>
             </div>
 
-            <p className="tac-tc-sub-heading">5.1.2 — Offline Educational Programmes</p>
+            <p className="tac-tc-sub-heading">5.1.2 â€” Offline Educational Programmes</p>
             <ul className="tac-tc-lettered">
               <li><span className="ltr">a</span><span><strong>TAC Suite:</strong> An in-person creative skills programme conducted at TAC&rsquo;s campus in Madhapur, Hyderabad, structured as a fixed-term batch programme. Pricing and batch schedules are communicated separately at the time of enrolment.</span></li>
               <li><span className="ltr">b</span><span><strong>Digital Marketing (DM) Offline Batches:</strong> An in-person structured digital marketing programme conducted at TAC&rsquo;s campus. Pricing, batch schedules, and specific terms are communicated separately.</span></li>
             </ul>
 
-            <p className="tac-tc-sub-heading">5.1.3 — Institutional Programme</p>
+            <p className="tac-tc-sub-heading">5.1.3 â€” Institutional Programme</p>
             <ul className="tac-tc-lettered">
               <li><span className="ltr">a</span><span><strong>DM Online (College Partnership Programme):</strong> A digital marketing curriculum delivered to enrolled students of partner educational institutions under a signed Memorandum of Understanding (MoU). The terms of this programme are governed by the specific institutional MoU and are supplemental to this Agreement.</span></li>
             </ul>
@@ -582,26 +582,26 @@ export default function TermsAndConditionsPage() {
           {/* Section 6 */}
           <section className="tac-tc-section" id="s6">
             <div className="tac-tc-section-num">Section 06</div>
-            <h2>Monthly Subscription — Creator Pass and Module Pass</h2>
+            <h2>Monthly Subscription â€” Creator Pass and Module Pass</h2>
 
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.1 — Commencement</div>
+              <div className="tac-tc-clause-num">6.1 â€” Commencement</div>
               <p>A subscription commences on the date and time that a successful payment confirmation is issued by JODO and received by TAC&rsquo;s systems. Platform access is activated automatically upon payment confirmation.</p>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.2 — Billing Date</div>
+              <div className="tac-tc-clause-num">6.2 â€” Billing Date</div>
               <p>The Billing Date for monthly subscriptions is the calendar day in each subsequent month corresponding to the original date of subscription activation. If the Billing Date falls on a day that does not exist in the relevant month (e.g., the 31st in a month with only 30 days), the debit will occur on the last calendar day of that month.</p>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.3 — Automatic Renewal</div>
+              <div className="tac-tc-clause-num">6.3 â€” Automatic Renewal</div>
               <p>Monthly subscriptions renew automatically on each Billing Date. By subscribing, You explicitly and irrevocably authorise TAC, through JODO&rsquo;s Jodo Flex platform, to debit the applicable subscription fee from your registered payment instrument on each Billing Date without requiring any additional action, instruction, or approval from You. This auto-debit mandate continues indefinitely until You take affirmative steps to cancel as specified in Clause 6.7.</p>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.4 — Advance Billing Reminder</div>
+              <div className="tac-tc-clause-num">6.4 â€” Advance Billing Reminder</div>
               <p>TAC will send You an email and SMS notification at least three (3) calendar days before each Billing Date as a courtesy reminder. Non-receipt of such reminder due to a change in your registered contact details, spam filtering, or any other reason attributable to You shall not constitute grounds to dispute a charge.</p>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.5 — Failed Auto-Debit</div>
+              <div className="tac-tc-clause-num">6.5 â€” Failed Auto-Debit</div>
               <p>If an auto-debit attempt on the Billing Date fails for any reason attributable to the User (insufficient funds, expired instrument, blocked card, bank-imposed limits, or UPI mandate suspension):</p>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">6.5.1</span><span>JODO will re-attempt the debit up to two (2) additional times over a period of five (5) Working Days from the original Billing Date;</span></li>
@@ -612,20 +612,20 @@ export default function TermsAndConditionsPage() {
               </ul>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.6 — Access Period</div>
+              <div className="tac-tc-clause-num">6.6 â€” Access Period</div>
               <p>The access period for each subscription month runs from the successful payment date to the day immediately preceding the next Billing Date. Access during this period is subject to the terms of this Agreement.</p>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.7 — Cancellation Procedure</div>
+              <div className="tac-tc-clause-num">6.7 â€” Cancellation Procedure</div>
               <p>To stop future auto-debits, You must cancel your subscription by taking one or more of the following steps before your next Billing Date:</p>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">6.7.1</span><span>Logging in to your User Account &gt; Account Settings &gt; Subscription Management &gt; Cancel Subscription;</span></li>
-                <li><span className="sub-num">6.7.2</span><span>Sending an email to <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with the subject line <em>&lsquo;Subscription Cancellation Request – [Registered Name]&rsquo;</em> and your registered mobile number; or</span></li>
+                <li><span className="sub-num">6.7.2</span><span>Sending an email to <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with the subject line <em>&lsquo;Subscription Cancellation Request â€“ [Registered Name]&rsquo;</em> and your registered mobile number; or</span></li>
                 <li><span className="sub-num">6.7.3</span><span>Directly revoking the UPI AutoPay or eNACH mandate from your bank&rsquo;s net banking portal, UPI application (Google Pay, PhonePe, Paytm, or BHIM), or by contacting your bank or card issuer.</span></li>
               </ul>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">6.8 — Effect of Cancellation</div>
+              <div className="tac-tc-clause-num">6.8 â€” Effect of Cancellation</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '6px' }}>
                 <li><span className="sub-num">6.8.1</span><span>No further auto-debits will be initiated after the cancellation is confirmed by TAC;</span></li>
                 <li><span className="sub-num">6.8.2</span><span>Your access to the Platform continues uninterrupted until the last day of the billing period for which payment has already been made;</span></li>
@@ -641,7 +641,7 @@ export default function TermsAndConditionsPage() {
             <h2>Bundle Plans and Combo Offers</h2>
 
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">7.1 — Available Bundle Plans include:</div>
+              <div className="tac-tc-clause-num">7.1 â€” Available Bundle Plans include:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">7.1.1</span><span>A <strong>Three-Month Bundle</strong> (3 consecutive months of Creator Pass access at a consolidated discounted price);</span></li>
                 <li><span className="sub-num">7.1.2</span><span>A <strong>Six-Month Bundle</strong> (6 consecutive months of Creator Pass access at a further discounted consolidated price);</span></li>
@@ -650,7 +650,7 @@ export default function TermsAndConditionsPage() {
               </ul>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">7.2 — Bundle Plans are subject to the following terms:</div>
+              <div className="tac-tc-clause-num">7.2 â€” Bundle Plans are subject to the following terms:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">7.2.1</span><span>A Bundle Plan is purchased through a single, upfront, non-recurring payment. Platform access is activated for the entire duration of the bundle upon successful payment.</span></li>
                 <li><span className="sub-num">7.2.2</span><span>Bundle Plans do not automatically renew. Upon expiry, no further charges will be levied unless You voluntarily re-subscribe.</span></li>
@@ -677,23 +677,23 @@ export default function TermsAndConditionsPage() {
           {/* Section 8 */}
           <section className="tac-tc-section" id="s8">
             <div className="tac-tc-section-num">Section 08</div>
-            <h2>Payment Gateway — JODO</h2>
+            <h2>Payment Gateway â€” JODO</h2>
 
             <div className="tac-tc-clause">
               <div className="tac-tc-clause-num">8.1</div>
               <p>All payments for TAC&rsquo;s digital Services are processed through JODO (www.jodo.in), TAC&rsquo;s authorised education payment gateway and recurring payment service provider. JODO operates the Jodo Flex platform, which enables UPI AutoPay and eNACH-based recurring mandates for subscription fee collection.</p>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">8.2 — By subscribing and initiating payment through JODO, You acknowledge and agree that:</div>
+              <div className="tac-tc-clause-num">8.2 â€” By subscribing and initiating payment through JODO, You acknowledge and agree that:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">8.2.1</span><span>Your payment and subscription mandate will be governed by JODO&rsquo;s terms of service and privacy policy in addition to this Agreement;</span></li>
-                <li><span className="sub-num">8.2.2</span><span>TAC does not store, retain, or have access to your full card number, UPI PIN, net banking password, or any other sensitive payment credential — all such data is handled exclusively and securely by JODO in accordance with RBI guidelines and PCI-DSS standards;</span></li>
+                <li><span className="sub-num">8.2.2</span><span>TAC does not store, retain, or have access to your full card number, UPI PIN, net banking password, or any other sensitive payment credential â€” all such data is handled exclusively and securely by JODO in accordance with RBI guidelines and PCI-DSS standards;</span></li>
                 <li><span className="sub-num">8.2.3</span><span>The Subscription Mandate You set up through JODO authorises JODO to debit the applicable subscription fee on each Billing Date automatically and without requiring further instruction from You; and</span></li>
                 <li><span className="sub-num">8.2.4</span><span>For queries specific to JODO&rsquo;s platform or mandate management, You may contact JODO directly at <a href="mailto:support@jodopay.com" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@jodopay.com</a>.</span></li>
               </ul>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">8.3 — Accepted payment modes through JODO:</div>
+              <div className="tac-tc-clause-num">8.3 â€” Accepted payment modes through JODO:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">8.3.1</span><span>UPI AutoPay via all UPI-enabled applications registered with NPCI;</span></li>
                 <li><span className="sub-num">8.3.2</span><span>eNACH (Electronic National Automated Clearing House) mandate setup via debit card or net banking;</span></li>
@@ -705,18 +705,18 @@ export default function TermsAndConditionsPage() {
             </div>
             <div className="tac-tc-clause">
               <div className="tac-tc-clause-num">8.4</div>
-              <p>All prices displayed on the TAC Platform are in Indian Rupees (₹) and are inclusive of applicable GST at the prevailing rate (currently 18%). TAC will issue a GST-compliant invoice to your registered email address after each successful payment.</p>
+              <p>All prices displayed on the TAC Platform are in Indian Rupees (â‚¹) and are inclusive of applicable GST at the prevailing rate (currently 18%). TAC will issue a GST-compliant invoice to your registered email address after each successful payment.</p>
             </div>
             <div className="tac-tc-warning">
-              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>⚠️</span>
-              <span><strong>8.5 —</strong> Framing, price or payment manipulation, or exploitation of any technical bug or error to obtain TAC Services at an incorrect price or without payment shall constitute fraud and will be pursued under Applicable Law, including the Bharatiya Nyaya Sanhita, 2023.</span>
+              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>âš ï¸</span>
+              <span><strong>8.5 â€”</strong> Framing, price or payment manipulation, or exploitation of any technical bug or error to obtain TAC Services at an incorrect price or without payment shall constitute fraud and will be pursued under Applicable Law, including the Bharatiya Nyaya Sanhita, 2023.</span>
             </div>
           </section>
 
           {/* Section 9 */}
           <section className="tac-tc-section" id="s9">
             <div className="tac-tc-section-num">Section 09</div>
-            <h2>Failed Transaction — Bank Debit Without TAC Receiving Payment</h2>
+            <h2>Failed Transaction â€” Bank Debit Without TAC Receiving Payment</h2>
 
             <div className="tac-tc-clause">
               <div className="tac-tc-clause-num">9.1</div>
@@ -724,12 +724,12 @@ export default function TermsAndConditionsPage() {
             </div>
 
             <div className="tac-tc-banner">
-              <div className="tac-tc-banner-title">⚡ Critical Distinction — JODO Debit Without TAC Receipt</div>
+              <div className="tac-tc-banner-title">âš¡ Critical Distinction â€” JODO Debit Without TAC Receipt</div>
               <p>In a Failed Transaction, TAC has not received your money. Your subscription has not been activated or renewed. TAC is not in possession of the debited amount. The pending amount rests with the payment network (JODO/NPCI/bank) and will be returned to your account automatically under their standard reversal timelines. TAC cannot hold, release, or accelerate this refund. Your remedy is against your bank or JODO, not against TAC.</p>
             </div>
 
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">9.2 — How to identify a Failed Transaction:</div>
+              <div className="tac-tc-clause-num">9.2 â€” How to identify a Failed Transaction:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '6px' }}>
                 <li><span className="sub-num">9.2.1</span><span>You receive an SMS/notification from your bank confirming a debit of the subscription amount;</span></li>
                 <li><span className="sub-num">9.2.2</span><span>You do not receive a payment confirmation email from TAC or JODO; and</span></li>
@@ -737,26 +737,26 @@ export default function TermsAndConditionsPage() {
               </ul>
             </div>
             <div className="tac-tc-clause">
-              <div className="tac-tc-clause-num">9.3 — Procedure to Report and Resolve:</div>
+              <div className="tac-tc-clause-num">9.3 â€” Procedure to Report and Resolve:</div>
               <ul className="tac-tc-sublist" style={{ marginTop: '6px' }}>
                 <li><span className="sub-num">9.3.1</span><span>Wait for twenty-four (24) hours from the time of the debit, as many failed transactions auto-reconcile and either complete or reverse automatically;</span></li>
-                <li><span className="sub-num">9.3.2</span><span>If not resolved within twenty-four (24) hours, email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with the subject line <em>&lsquo;Failed Transaction – [Name] – [Date]&rsquo;</em>, providing your registered mobile number, the date and time of the transaction, and the reference number from your bank statement or UPI app;</span></li>
+                <li><span className="sub-num">9.3.2</span><span>If not resolved within twenty-four (24) hours, email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with the subject line <em>&lsquo;Failed Transaction â€“ [Name] â€“ [Date]&rsquo;</em>, providing your registered mobile number, the date and time of the transaction, and the reference number from your bank statement or UPI app;</span></li>
                 <li><span className="sub-num">9.3.3</span><span>TAC will initiate a reconciliation inquiry with JODO within one (1) Working Day of receiving your email; and</span></li>
                 <li><span className="sub-num">9.3.4</span><span>If TAC&rsquo;s reconciliation confirms the amount was not received by TAC, a written confirmation will be issued. You may present this to your bank or JODO to facilitate the reversal.</span></li>
               </ul>
             </div>
 
-            <p className="tac-tc-sub-heading">9.4 — Expected Reversal Timelines (bank/JODO timelines — not under TAC&rsquo;s control)</p>
+            <p className="tac-tc-sub-heading">9.4 â€” Expected Reversal Timelines (bank/JODO timelines â€” not under TAC&rsquo;s control)</p>
             <div className="tac-tc-tbl-wrap">
               <table className="tac-tc-tbl">
                 <thead>
                   <tr><th>Payment Method</th><th>Expected Reversal Timeline</th><th>Contact for Delay</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>UPI AutoPay (GPay, PhonePe, etc.)</strong></td><td>1–3 Working Days</td><td>Your UPI app / NPCI helpline</td></tr>
-                  <tr><td><strong>eNACH (Net Banking)</strong></td><td>5–7 Working Days</td><td>Your bank</td></tr>
-                  <tr><td><strong>Debit Card</strong></td><td>5–7 Working Days</td><td>Your issuing bank</td></tr>
-                  <tr><td><strong>Credit Card</strong></td><td>7–10 Working Days</td><td>Your card-issuing bank</td></tr>
+                  <tr><td><strong>UPI AutoPay (GPay, PhonePe, etc.)</strong></td><td>1â€“3 Working Days</td><td>Your UPI app / NPCI helpline</td></tr>
+                  <tr><td><strong>eNACH (Net Banking)</strong></td><td>5â€“7 Working Days</td><td>Your bank</td></tr>
+                  <tr><td><strong>Debit Card</strong></td><td>5â€“7 Working Days</td><td>Your issuing bank</td></tr>
+                  <tr><td><strong>Credit Card</strong></td><td>7â€“10 Working Days</td><td>Your card-issuing bank</td></tr>
                 </tbody>
               </table>
             </div>
@@ -788,3 +788,4 @@ export default function TermsAndConditionsPage() {
     </>
   );
 }
+

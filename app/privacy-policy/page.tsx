@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/footer";
+﻿import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const css = `
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
@@ -338,7 +338,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="tac-pp-clause">
-                <div className="tac-pp-clause-num">1.2 — Compliance Framework</div>
+                <div className="tac-pp-clause-num">1.2 â€” Compliance Framework</div>
                 <p>This Policy is issued in compliance with:</p>
                 <ul className="tac-pp-sublist" style={{ marginTop: '10px' }}>
                   <li><span className="sub-num">1.2.1</span><span>Section 43A and Section 72A of the Information Technology Act, 2000;</span></li>
@@ -363,7 +363,7 @@ export default function PrivacyPolicyPage() {
             <section className="tac-pp-section" id="s2">
               <div className="tac-pp-section-num">Section 02</div>
               <h2>Data Controller</h2>
-              <p>2.1 — The data controller responsible for your personal data is:</p>
+              <p>2.1 â€” The data controller responsible for your personal data is:</p>
               <div className="tac-pp-tbl-wrap">
                 <table className="tac-pp-tbl">
                   <thead>
@@ -371,7 +371,7 @@ export default function PrivacyPolicyPage() {
                   </thead>
                   <tbody>
                     <tr><td><strong>Name</strong></td><td>TAC School of Modern Learning Private Limited (The Art Code)</td></tr>
-                    <tr><td><strong>Address</strong></td><td>Madhapur, Hyderabad – 500081, Telangana, India</td></tr>
+                    <tr><td><strong>Address</strong></td><td>Madhapur, Hyderabad â€“ 500081, Telangana, India</td></tr>
                     <tr><td><strong>Data Privacy Email</strong></td><td><a href="mailto:legal@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>legal@theartcode.org</a></td></tr>
                     <tr><td><strong>Support Email</strong></td><td><a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a></td></tr>
                   </tbody>
@@ -384,16 +384,16 @@ export default function PrivacyPolicyPage() {
               <div className="tac-pp-section-num">Section 03</div>
               <h2>Categories of Personal Data Collected</h2>
 
-              <p style={{ fontWeight: 600, color: 'var(--ink)', marginBottom: '10px' }}>3.1 — Data Provided Directly by You</p>
+              <p style={{ fontWeight: 600, color: 'var(--ink)', marginBottom: '10px' }}>3.1 â€” Data Provided Directly by You</p>
               <ul className="tac-pp-lettered">
                 <li><span className="ltr">a</span><span><strong>Registration data:</strong> Full legal name, email address, mobile telephone number, city and state of residence, date of birth (for age verification), and optionally a profile photograph.</span></li>
                 <li><span className="ltr">b</span><span><strong>Educational and professional data:</strong> Educational qualifications, current occupation, career goals, skills and areas of interest, and portfolio work submitted through the Platform.</span></li>
-                <li><span className="ltr">c</span><span><strong>Financial and billing data:</strong> Billing address, GSTIN (where provided for B2B invoicing), and payment-related metadata such as transaction IDs, payment confirmation status, and subscription history. TAC does not store full card numbers, CVVs, net banking passwords, or UPI PINs — these are handled exclusively by JODO.</span></li>
+                <li><span className="ltr">c</span><span><strong>Financial and billing data:</strong> Billing address, GSTIN (where provided for B2B invoicing), and payment-related metadata such as transaction IDs, payment confirmation status, and subscription history. TAC does not store full card numbers, CVVs, net banking passwords, or UPI PINs â€” these are handled exclusively by JODO.</span></li>
                 <li><span className="ltr">d</span><span><strong>Communication data:</strong> Content of messages, queries, complaints, and feedback submitted through support channels, community forums, or any TAC communication interface.</span></li>
                 <li><span className="ltr">e</span><span><strong>User-generated content:</strong> Projects, assignments, portfolio submissions, testimonials, and community posts submitted to or through the Platform.</span></li>
               </ul>
 
-              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 10px' }}>3.2 — Data Collected Automatically</p>
+              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 10px' }}>3.2 â€” Data Collected Automatically</p>
               <ul className="tac-pp-lettered">
                 <li><span className="ltr">a</span><span><strong>Device and technical data:</strong> IP address, device type and model, operating system version, browser type and version, screen resolution, and unique device identifiers.</span></li>
                 <li><span className="ltr">b</span><span><strong>Usage and engagement data:</strong> Pages visited, content accessed and viewed, watch duration per video, search queries on the Platform, course progress and completion status, login timestamps, and session duration.</span></li>
@@ -401,7 +401,7 @@ export default function PrivacyPolicyPage() {
                 <li><span className="ltr">d</span><span><strong>Cookie data:</strong> As described in Section 9 of this Policy.</span></li>
               </ul>
 
-              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 10px' }}>3.3 — Data Received from Third Parties</p>
+              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 10px' }}>3.3 â€” Data Received from Third Parties</p>
               <ul className="tac-pp-lettered">
                 <li><span className="ltr">a</span><span><strong>Social login providers:</strong> If you choose to register or log in via Google or another third-party authentication service, TAC receives your name and email address from that provider.</span></li>
                 <li><span className="ltr">b</span><span><strong>JODO:</strong> TAC receives payment confirmation status, transaction identifiers, and mandate status from JODO in connection with subscription billing and auto-pay management.</span></li>
@@ -441,11 +441,11 @@ export default function PrivacyPolicyPage() {
               <h2>Disclosure of Personal Data</h2>
 
               <div className="tac-pp-notice">
-                <span className="tac-pp-notice-icon">🔒</span>
-                <span>5.1 — TAC does not sell, rent, or trade your personal data to any third party for their independent commercial or marketing purposes. Personal data is disclosed only in the circumstances set out below.</span>
+                <span className="tac-pp-notice-icon">ðŸ”’</span>
+                <span>5.1 â€” TAC does not sell, rent, or trade your personal data to any third party for their independent commercial or marketing purposes. Personal data is disclosed only in the circumstances set out below.</span>
               </div>
 
-              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '16px 0 10px' }}>5.2 — Data Processors (Service Providers)</p>
+              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '16px 0 10px' }}>5.2 â€” Data Processors (Service Providers)</p>
               <p>TAC shares personal data with the following categories of third-party data processors who process data on TAC&rsquo;s behalf and under TAC&rsquo;s instructions:</p>
               <ul className="tac-pp-sublist" style={{ marginTop: '12px' }}>
                 <li><span className="sub-num">5.2.1</span><span><strong>JODO</strong> (Jodo Financial Solutions Pvt. Ltd., www.jodo.in): Processes payment data and manages subscription mandates (eNACH and UPI AutoPay).</span></li>
@@ -456,17 +456,17 @@ export default function PrivacyPolicyPage() {
                 <li><span className="sub-num">5.2.6</span><span><strong>Analytics platforms</strong> (e.g., Google Analytics): Receive anonymised, aggregated usage data for platform improvement purposes.</span></li>
               </ul>
 
-              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 10px' }}>5.3 — Business Partners (Limited)</p>
+              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 10px' }}>5.3 â€” Business Partners (Limited)</p>
               <ul className="tac-pp-sublist">
                 <li><span className="sub-num">5.3.1</span><span><strong>College partners (DM Online programme):</strong> TAC shares student enrolment data (name, contact details, student ID) with the specific institution that enrolled the student under the relevant MoU.</span></li>
                 <li><span className="sub-num">5.3.2</span><span><strong>Corporate placement partners:</strong> Student profiles and portfolio data are shared with prospective employers only with the explicit prior written consent of the student.</span></li>
                 <li><span className="sub-num">5.3.3</span><span><strong>SAT DROP industry speakers:</strong> Minimal identifying data (attendance list) may be shared with confirmed event speakers for session delivery purposes.</span></li>
               </ul>
 
-              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 8px' }}>5.4 — Legal Disclosures</p>
+              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 8px' }}>5.4 â€” Legal Disclosures</p>
               <p>TAC may disclose your personal data to government bodies, regulatory authorities, courts, tribunals, law enforcement agencies, or other public bodies where required or authorised by Applicable Law, including under court orders, government directions, or regulatory compliance obligations.</p>
 
-              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 8px' }}>5.5 — Business Transfers</p>
+              <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '20px 0 8px' }}>5.5 â€” Business Transfers</p>
               <p>In the event of a merger, acquisition, demerger, or sale of all or substantially all of TAC&rsquo;s business or assets, your personal data may be transferred to the acquiring or succeeding entity. TAC will provide you with not less than fourteen (14) days&rsquo; advance notice by email before any such transfer is completed. The transferee will be required to maintain data protection standards equivalent to or more stringent than this Policy.</p>
             </section>
 
@@ -474,7 +474,7 @@ export default function PrivacyPolicyPage() {
             <section className="tac-pp-section" id="s6">
               <div className="tac-pp-section-num">Section 06</div>
               <h2>Cross-Border Data Transfers</h2>
-              <p>6.1 — TAC stores all personal data on servers located within the territory of India wherever practicable. Where data is processed or stored by third-party service providers outside India, TAC ensures that such transfers are made only to jurisdictions with adequate data protection frameworks or under contractual arrangements that impose equivalent data protection obligations on the recipient.</p>
+              <p>6.1 â€” TAC stores all personal data on servers located within the territory of India wherever practicable. Where data is processed or stored by third-party service providers outside India, TAC ensures that such transfers are made only to jurisdictions with adequate data protection frameworks or under contractual arrangements that impose equivalent data protection obligations on the recipient.</p>
             </section>
 
             {/* Section 7 */}
@@ -489,10 +489,10 @@ export default function PrivacyPolicyPage() {
                   <tbody>
                     <tr><td><strong>Active account and profile data</strong></td><td>Duration of account + 6 months post-closure</td><td>Contractual necessity</td></tr>
                     <tr><td><strong>Payment and transaction records</strong></td><td>7 years from date of transaction</td><td>GST Act / tax compliance</td></tr>
-                    <tr><td><strong>GST invoices and billing records</strong></td><td>7 years</td><td>CGST Act, 2017 — Section 36</td></tr>
+                    <tr><td><strong>GST invoices and billing records</strong></td><td>7 years</td><td>CGST Act, 2017 â€” Section 36</td></tr>
                     <tr><td><strong>Course completion and certificates</strong></td><td>Indefinitely</td><td>Verification and legitimate interest</td></tr>
                     <tr><td><strong>Support and communication records</strong></td><td>3 years from date of communication</td><td>Consumer grievance obligations</td></tr>
-                    <tr><td><strong>Marketing preference records</strong></td><td>Duration of consent + 3 years</td><td>Proof of consent — DPDPA 2023</td></tr>
+                    <tr><td><strong>Marketing preference records</strong></td><td>Duration of consent + 3 years</td><td>Proof of consent â€” DPDPA 2023</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -502,7 +502,7 @@ export default function PrivacyPolicyPage() {
             <section className="tac-pp-section" id="s8">
               <div className="tac-pp-section-num">Section 08</div>
               <h2>Security Measures</h2>
-              <p>8.1 — TAC implements the following technical and organisational security measures to protect your personal data from unauthorised access, disclosure, alteration, or destruction:</p>
+              <p>8.1 â€” TAC implements the following technical and organisational security measures to protect your personal data from unauthorised access, disclosure, alteration, or destruction:</p>
               <ul className="tac-pp-sublist" style={{ marginTop: '12px' }}>
                 <li><span className="sub-num">8.1.1</span><span>TLS/SSL encryption for all data transmitted between your device and the TAC Platform;</span></li>
                 <li><span className="sub-num">8.1.2</span><span>Encryption at rest for all sensitive personal data stored on TAC&rsquo;s servers;</span></li>
@@ -513,8 +513,8 @@ export default function PrivacyPolicyPage() {
                 <li><span className="sub-num">8.1.7</span><span>Data minimisation practices ensuring only data necessary for the stated purpose is collected.</span></li>
               </ul>
               <div className="tac-pp-notice" style={{ marginTop: '18px' }}>
-                <span className="tac-pp-notice-icon">⚠️</span>
-                <span>8.2 — TAC will notify you within seventy-two (72) hours of becoming aware of any personal data breach that is likely to result in a risk to your rights, freedoms, or safety, as required by Section 8(6) of the Digital Personal Data Protection Act, 2023. Such notification will be made to your registered email address.</span>
+                <span className="tac-pp-notice-icon">âš ï¸</span>
+                <span>8.2 â€” TAC will notify you within seventy-two (72) hours of becoming aware of any personal data breach that is likely to result in a risk to your rights, freedoms, or safety, as required by Section 8(6) of the Digital Personal Data Protection Act, 2023. Such notification will be made to your registered email address.</span>
               </div>
             </section>
 
@@ -561,49 +561,49 @@ export default function PrivacyPolicyPage() {
             <section className="tac-pp-section" id="s10">
               <div className="tac-pp-section-num">Section 10</div>
               <h2>Your Rights as a Data Principal</h2>
-              <p>10.1 — Under the Digital Personal Data Protection Act, 2023 and other Applicable Law, you have the following rights in respect of your personal data:</p>
+              <p>10.1 â€” Under the Digital Personal Data Protection Act, 2023 and other Applicable Law, you have the following rights in respect of your personal data:</p>
 
               <div className="tac-pp-rights-grid">
                 <div className="tac-pp-right-card">
-                  <div className="tac-pp-right-card-icon">🔍</div>
+                  <div className="tac-pp-right-card-icon">ðŸ”</div>
                   <div className="tac-pp-right-card-title">Right to Access</div>
                   <div className="tac-pp-right-card-desc">Request a summary of the personal data TAC holds about you and the purposes for which it is processed.</div>
                 </div>
                 <div className="tac-pp-right-card">
-                  <div className="tac-pp-right-card-icon">✏️</div>
+                  <div className="tac-pp-right-card-icon">âœï¸</div>
                   <div className="tac-pp-right-card-title">Right to Correction</div>
                   <div className="tac-pp-right-card-desc">Request that any inaccurate, incomplete, or outdated personal data be corrected or completed.</div>
                 </div>
                 <div className="tac-pp-right-card">
-                  <div className="tac-pp-right-card-icon">🗑️</div>
+                  <div className="tac-pp-right-card-icon">ðŸ—‘ï¸</div>
                   <div className="tac-pp-right-card-title">Right to Erasure</div>
                   <div className="tac-pp-right-card-desc">Request deletion of your personal data where it is no longer necessary, subject to legal retention obligations.</div>
                 </div>
                 <div className="tac-pp-right-card">
-                  <div className="tac-pp-right-card-icon">↩️</div>
+                  <div className="tac-pp-right-card-icon">â†©ï¸</div>
                   <div className="tac-pp-right-card-title">Right to Withdraw Consent</div>
                   <div className="tac-pp-right-card-desc">Withdraw consent for processing at any time. Withdrawal does not affect validity of prior processing.</div>
                 </div>
                 <div className="tac-pp-right-card">
-                  <div className="tac-pp-right-card-icon">📦</div>
+                  <div className="tac-pp-right-card-icon">ðŸ“¦</div>
                   <div className="tac-pp-right-card-title">Right to Data Portability</div>
                   <div className="tac-pp-right-card-desc">Request a copy of your data in a structured, machine-readable format.</div>
                 </div>
                 <div className="tac-pp-right-card">
-                  <div className="tac-pp-right-card-icon">⚖️</div>
+                  <div className="tac-pp-right-card-icon">âš–ï¸</div>
                   <div className="tac-pp-right-card-title">Right to Grievance Redressal</div>
                   <div className="tac-pp-right-card-desc">File a complaint with TAC&rsquo;s Grievance Officer, or with the Data Protection Board of India.</div>
                 </div>
                 <div className="tac-pp-right-card">
-                  <div className="tac-pp-right-card-icon">👤</div>
+                  <div className="tac-pp-right-card-icon">ðŸ‘¤</div>
                   <div className="tac-pp-right-card-title">Right to Nominate</div>
                   <div className="tac-pp-right-card-desc">Nominate another individual to exercise your rights in the event of your death or incapacity.</div>
                 </div>
               </div>
 
               <div className="tac-pp-notice" style={{ marginTop: '6px' }}>
-                <span className="tac-pp-notice-icon">📧</span>
-                <span>10.2 — To exercise any of the above rights, send a written request to <strong>legal@theartcode.org</strong> with the subject line <em>&ldquo;Data Rights Request — [Your Name]&rdquo;</em>. TAC will acknowledge your request within three (3) Working Days and respond substantively within fifteen (15) Working Days.</span>
+                <span className="tac-pp-notice-icon">ðŸ“§</span>
+                <span>10.2 â€” To exercise any of the above rights, send a written request to <strong>legal@theartcode.org</strong> with the subject line <em>&ldquo;Data Rights Request â€” [Your Name]&rdquo;</em>. TAC will acknowledge your request within three (3) Working Days and respond substantively within fifteen (15) Working Days.</span>
               </div>
             </section>
 
@@ -611,25 +611,25 @@ export default function PrivacyPolicyPage() {
             <section className="tac-pp-section" id="s11">
               <div className="tac-pp-section-num">Section 11</div>
               <h2>Third-Party Links and Platforms</h2>
-              <p>11.1 — The TAC Platform may contain links to third-party websites, social media platforms, or other services. TAC is not responsible for the privacy practices, terms of service, or data collection practices of such third parties. You access those platforms at your own risk and are advised to review their privacy policies independently.</p>
+              <p>11.1 â€” The TAC Platform may contain links to third-party websites, social media platforms, or other services. TAC is not responsible for the privacy practices, terms of service, or data collection practices of such third parties. You access those platforms at your own risk and are advised to review their privacy policies independently.</p>
             </section>
 
             {/* Section 12 */}
             <section className="tac-pp-section" id="s12">
               <div className="tac-pp-section-num">Section 12</div>
               <h2>Children&rsquo;s Privacy</h2>
-              <p>12.1 — TAC does not knowingly collect or process personal data from individuals under the age of thirteen (13) years. If TAC becomes aware that personal data has been inadvertently collected from a child under 13, it will be deleted promptly. Users between 13 and 18 must register with verified parental consent. Where consent is given on behalf of a child, the parent or guardian assumes all obligations under this Policy in respect of the child&rsquo;s data.</p>
+              <p>12.1 â€” TAC does not knowingly collect or process personal data from individuals under the age of thirteen (13) years. If TAC becomes aware that personal data has been inadvertently collected from a child under 13, it will be deleted promptly. Users between 13 and 18 must register with verified parental consent. Where consent is given on behalf of a child, the parent or guardian assumes all obligations under this Policy in respect of the child&rsquo;s data.</p>
             </section>
 
             {/* Section 13 */}
             <section className="tac-pp-section" id="s13">
               <div className="tac-pp-section-num">Section 13</div>
               <h2>Amendments</h2>
-              <p>13.1 — This Policy may be amended from time to time to reflect changes in Applicable Law, data processing practices, or TAC&rsquo;s business. Material amendments will be communicated by email and by notice on the Platform at least fourteen (14) days before they take effect. The &lsquo;Effective Date&rsquo; at the top of this Policy reflects the most recent revision.</p>
+              <p>13.1 â€” This Policy may be amended from time to time to reflect changes in Applicable Law, data processing practices, or TAC&rsquo;s business. Material amendments will be communicated by email and by notice on the Platform at least fourteen (14) days before they take effect. The &lsquo;Effective Date&rsquo; at the top of this Policy reflects the most recent revision.</p>
 
               <div className="tac-pp-contact">
-                <a href="mailto:legal@theartcode.org" className="tac-pp-contact-pill"><span>✉️</span> legal@theartcode.org</a>
-                <a href="mailto:support@theartcode.org" className="tac-pp-contact-pill"><span>💬</span> support@theartcode.org</a>
+                <a href="mailto:legal@theartcode.org" className="tac-pp-contact-pill"><span>âœ‰ï¸</span> legal@theartcode.org</a>
+                <a href="mailto:support@theartcode.org" className="tac-pp-contact-pill"><span>ðŸ’¬</span> support@theartcode.org</a>
               </div>
             </section>
 
@@ -641,3 +641,4 @@ export default function PrivacyPolicyPage() {
     </>
   );
 }
+

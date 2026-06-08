@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/footer";
+﻿import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const css = `
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
@@ -274,7 +274,7 @@ const css = `
     align-items: flex-start;
   }
   .tac-rp-banner ul li::before {
-    content: '•';
+    content: 'â€¢';
     color: var(--accent);
     flex-shrink: 0;
     font-weight: 700;
@@ -416,7 +416,7 @@ export default function RefundPolicyPage() {
           {/* Section 1 */}
           <section className="tac-rp-section" id="s1">
             <div className="tac-rp-section-num">Section 01</div>
-            <h2>Preliminary — Statement of TAC&rsquo;s Refund Position</h2>
+            <h2>Preliminary â€” Statement of TAC&rsquo;s Refund Position</h2>
             <div className="tac-rp-clause">
               <div className="tac-rp-clause-num">1.1</div>
               <p>This Refund and Cancellation Policy (&ldquo;Policy&rdquo;) governs all refund and cancellation requests in respect of payments made to TAC School of Modern Learning Private Limited (&ldquo;TAC&rdquo;, &ldquo;The Art Code&rdquo;) for any TAC Service, including digital subscriptions, bundle plans, SAT DROP webinars, bootcamps, offline course fees, and institutional programme fees.</p>
@@ -434,16 +434,16 @@ export default function RefundPolicyPage() {
           {/* Section 2 */}
           <section className="tac-rp-section" id="s2">
             <div className="tac-rp-section-num">Section 02</div>
-            <h2>The No-Refund Policy — Core Position</h2>
+            <h2>The No-Refund Policy â€” Core Position</h2>
 
             <div className="tac-rp-banner">
-              <div className="tac-rp-banner-title">⚠️ TAC&rsquo;s Core Position: All Payments Are Final and Non-Refundable</div>
+              <div className="tac-rp-banner-title">âš ï¸ TAC&rsquo;s Core Position: All Payments Are Final and Non-Refundable</div>
               <p>Subject only to the specific, exhaustively listed exceptions in Clauses 3, 4, 5, 6, and 7 of this Policy, ALL payments made to TAC are final and non-refundable. This applies without exception to:</p>
               <ul>
-                <li>Monthly subscription fees (Creator Pass ₹2,999 and Module Pass ₹499)</li>
+                <li>Monthly subscription fees (Creator Pass â‚¹2,999 and Module Pass â‚¹499)</li>
                 <li>Bundle plan payments (3-month, 6-month, annual, and all combo offers)</li>
-                <li>SAT DROP webinar purchase fees (₹149 per session)</li>
-                <li>Bootcamp fees (₹999 per event)</li>
+                <li>SAT DROP webinar purchase fees (â‚¹149 per session)</li>
+                <li>Bootcamp fees (â‚¹999 per event)</li>
                 <li>Offline course fees (TAC Suite and DM Batches)</li>
                 <li>Institutional programme fees (DM Online)</li>
               </ul>
@@ -451,11 +451,11 @@ export default function RefundPolicyPage() {
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">2.2 — Basis for No-Refund Policy</div>
+              <div className="tac-rp-clause-num">2.2 â€” Basis for No-Refund Policy</div>
               <p>TAC&rsquo;s platform is a digital content subscription service. Upon payment, access to a substantial library of pre-existing and continuously updated digital content is immediately granted. The delivery of the subscribed service commences at the moment of payment confirmation. Because the service is delivered digitally and instantaneously, and because TAC incurs substantial fixed costs (content production, tutor fees, platform hosting, licensing) regardless of how much content a subscriber consumes, no refund is granted for the subscription period once it has commenced.</p>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">2.3 — Relationship to Consumer Protection Law</div>
+              <div className="tac-rp-clause-num">2.3 â€” Relationship to Consumer Protection Law</div>
               <p>Nothing in this Policy excludes or limits Your rights under the Consumer Protection Act, 2019 in cases of provably defective service delivery, unfair trade practice, or deceptive representation by TAC. The narrow exceptions in this Policy represent TAC&rsquo;s voluntary undertaking in good faith and in addition to, not in substitution for, any statutory rights You may have.</p>
             </div>
           </section>
@@ -463,14 +463,14 @@ export default function RefundPolicyPage() {
           {/* Section 3 */}
           <section className="tac-rp-section" id="s3">
             <div className="tac-rp-section-num">Section 03</div>
-            <h2>Exception 1 — Failed Transaction (Bank Debit Without TAC Receipt)</h2>
+            <h2>Exception 1 â€” Failed Transaction (Bank Debit Without TAC Receipt)</h2>
 
             <div className="tac-rp-exception-header">
               This is the <strong>primary exception</strong> to the no-refund policy and applies in a narrow, specific technical circumstance. A &lsquo;Failed Transaction&rsquo; occurs where Your bank account is debited by JODO during a payment attempt but the corresponding payment amount is <strong>NOT received and credited to TAC&rsquo;s account</strong> due to a technical failure in the payment network. In this situation, TAC has not received Your money, Your subscription has not been activated, and TAC has not delivered any service in exchange for the debited amount.
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">3.1 — Applicable Circumstances</div>
+              <div className="tac-rp-clause-num">3.1 â€” Applicable Circumstances</div>
               <p>This exception applies exclusively where <strong>all four</strong> of the following conditions are simultaneously met:</p>
               <ul className="tac-rp-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">3.1.1</span><span>Your bank account, UPI account, or payment instrument is debited by JODO;</span></li>
@@ -481,7 +481,7 @@ export default function RefundPolicyPage() {
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">3.2 — Refund Mechanism</div>
+              <div className="tac-rp-clause-num">3.2 â€” Refund Mechanism</div>
               <ul className="tac-rp-sublist" style={{ marginTop: '6px' }}>
                 <li><span className="sub-num">3.2.1</span><span>TAC is not the holder of the debited funds and cannot initiate, process, or accelerate the refund;</span></li>
                 <li><span className="sub-num">3.2.2</span><span>The debited amount is held within the NPCI/JODO/bank payment network and will be automatically reversed to Your payment instrument under the standard reversal protocols of NPCI and your bank;</span></li>
@@ -491,12 +491,12 @@ export default function RefundPolicyPage() {
             </div>
 
             <div className="tac-rp-notice">
-              <span className="tac-rp-notice-icon">📋</span>
-              <span><strong>3.3 — Procedure:</strong> To invoke this exception, email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with Your name, registered mobile number, JODO/bank transaction reference, date and time of debit, and amount debited — within <strong>seven (7) calendar days</strong> of the debit.</span>
+              <span className="tac-rp-notice-icon">ðŸ“‹</span>
+              <span><strong>3.3 â€” Procedure:</strong> To invoke this exception, email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with Your name, registered mobile number, JODO/bank transaction reference, date and time of debit, and amount debited â€” within <strong>seven (7) calendar days</strong> of the debit.</span>
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">3.4 — Non-Applicable Scenarios</div>
+              <div className="tac-rp-clause-num">3.4 â€” Non-Applicable Scenarios</div>
               <p>This exception does <strong>NOT</strong> apply to circumstances where:</p>
               <ul className="tac-rp-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">3.4.1</span><span>Payment is received by TAC and subscription/access is activated (even if You subsequently change your mind or do not use the Platform);</span></li>
@@ -509,7 +509,7 @@ export default function RefundPolicyPage() {
           {/* Section 4 */}
           <section className="tac-rp-section" id="s4">
             <div className="tac-rp-section-num">Section 04</div>
-            <h2>Exception 2 — Duplicate Charge</h2>
+            <h2>Exception 2 â€” Duplicate Charge</h2>
 
             <div className="tac-rp-clause">
               <div className="tac-rp-clause-num">4.1</div>
@@ -520,13 +520,13 @@ export default function RefundPolicyPage() {
               <p>Upon identification of a verified Duplicate Charge (either by TAC through routine reconciliation or by You through a written report to TAC), TAC will arrange the refund of the duplicate amount through JODO to Your original payment instrument within <strong>five (5) to seven (7) Working Days</strong> of verification.</p>
             </div>
             <div className="tac-rp-notice">
-              <span className="tac-rp-notice-icon">📧</span>
-              <span><strong>4.3 — Reporting:</strong> To report a suspected Duplicate Charge, email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with both transaction reference numbers.</span>
+              <span className="tac-rp-notice-icon">ðŸ“§</span>
+              <span><strong>4.3 â€” Reporting:</strong> To report a suspected Duplicate Charge, email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with both transaction reference numbers.</span>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">4.4 — A Duplicate Charge does NOT include:</div>
+              <div className="tac-rp-clause-num">4.4 â€” A Duplicate Charge does NOT include:</div>
               <ul className="tac-rp-sublist" style={{ marginTop: '6px' }}>
-                <li><span className="sub-num">4.4.1</span><span>Two charges from two different subscription plans active simultaneously (e.g., Creator Pass and Module Pass — these are separate products); or</span></li>
+                <li><span className="sub-num">4.4.1</span><span>Two charges from two different subscription plans active simultaneously (e.g., Creator Pass and Module Pass â€” these are separate products); or</span></li>
                 <li><span className="sub-num">4.4.2</span><span>A charge for the current billing cycle and a charge for an overdue prior month&rsquo;s subscription that was not debited on its Billing Date.</span></li>
               </ul>
             </div>
@@ -535,14 +535,14 @@ export default function RefundPolicyPage() {
           {/* Section 5 */}
           <section className="tac-rp-section" id="s5">
             <div className="tac-rp-section-num">Section 05</div>
-            <h2>Exception 3 — Charge After Confirmed Cancellation</h2>
+            <h2>Exception 3 â€” Charge After Confirmed Cancellation</h2>
 
             <div className="tac-rp-clause">
               <div className="tac-rp-clause-num">5.1</div>
               <p>If JODO debits Your payment instrument after TAC has issued a written subscription cancellation confirmation to You (i.e., after a cancellation confirmation email timestamped <strong>before</strong> the relevant Billing Date has been sent to Your registered email), that charge constitutes an erroneous charge and will be refunded within <strong>five (5) to seven (7) Working Days</strong>.</p>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">5.2 — This exception does NOT apply where:</div>
+              <div className="tac-rp-clause-num">5.2 â€” This exception does NOT apply where:</div>
               <ul className="tac-rp-sublist" style={{ marginTop: '6px' }}>
                 <li><span className="sub-num">5.2.1</span><span>You submitted the cancellation request on or after the Billing Date on which the charge in question was made;</span></li>
                 <li><span className="sub-num">5.2.2</span><span>The cancellation confirmation from TAC bears a timestamp that is after the relevant Billing Date; or</span></li>
@@ -550,18 +550,18 @@ export default function RefundPolicyPage() {
               </ul>
             </div>
             <div className="tac-rp-notice">
-              <span className="tac-rp-notice-icon">📎</span>
-              <span><strong>5.3 — To invoke this exception,</strong> You must provide TAC with a copy of the cancellation confirmation email (including headers) and the JODO transaction reference for the disputed charge.</span>
+              <span className="tac-rp-notice-icon">ðŸ“Ž</span>
+              <span><strong>5.3 â€” To invoke this exception,</strong> You must provide TAC with a copy of the cancellation confirmation email (including headers) and the JODO transaction reference for the disputed charge.</span>
             </div>
           </section>
 
           {/* Section 6 */}
           <section className="tac-rp-section" id="s6">
             <div className="tac-rp-section-num">Section 06</div>
-            <h2>Digital Subscription Refunds — Creator Pass and Module Pass</h2>
+            <h2>Digital Subscription Refunds â€” Creator Pass and Module Pass</h2>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">6.1 — Monthly Subscription: No Partial-Period Refunds</div>
+              <div className="tac-rp-clause-num">6.1 â€” Monthly Subscription: No Partial-Period Refunds</div>
               <p>Once a monthly subscription fee is successfully debited by JODO and access is activated for that billing cycle, no refund will be issued for any portion of that billing cycle, regardless of:</p>
               <ul className="tac-rp-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">6.1.1</span><span>How much or how little of the Platform&rsquo;s content You accessed or consumed during that period;</span></li>
@@ -573,7 +573,7 @@ export default function RefundPolicyPage() {
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">6.2 — Bundle Plans: No Pro-Rated Refunds</div>
+              <div className="tac-rp-clause-num">6.2 â€” Bundle Plans: No Pro-Rated Refunds</div>
               <p>Bundle Plans (3-month, 6-month, annual, and combo offers) are non-refundable once activated. No pro-rated refund will be issued for any unused months remaining in the bundle period at the time of cancellation.</p>
               <ul className="tac-rp-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">6.2.1</span><span>For example: if You purchase a 6-month Creator Pass bundle and cancel after 2 months of use, no refund will be issued for the remaining 4 months.</span></li>
@@ -582,12 +582,12 @@ export default function RefundPolicyPage() {
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">6.3 — Circumstances That Specifically Do NOT Qualify for a Refund</div>
+              <div className="tac-rp-clause-num">6.3 â€” Circumstances That Specifically Do NOT Qualify for a Refund</div>
               <ul className="tac-rp-sublist" style={{ marginTop: '6px' }}>
-                <li><span className="sub-num">6.3.1</span><span>Forgetting to cancel before the Billing Date — the pre-debit notification sent three (3) days before the Billing Date constitutes adequate advance notice;</span></li>
+                <li><span className="sub-num">6.3.1</span><span>Forgetting to cancel before the Billing Date â€” the pre-debit notification sent three (3) days before the Billing Date constitutes adequate advance notice;</span></li>
                 <li><span className="sub-num">6.3.2</span><span>Change of mind at any point after payment is made and access is activated;</span></li>
-                <li><span className="sub-num">6.3.3</span><span>Non-usage of the Platform — the right to access and use the Platform is the service delivered, regardless of whether that right is exercised;</span></li>
-                <li><span className="sub-num">6.3.4</span><span>Dissatisfaction with a specific tutor&rsquo;s delivery style or personality — platform-wide service delivery is not impaired by individual tutor preferences;</span></li>
+                <li><span className="sub-num">6.3.3</span><span>Non-usage of the Platform â€” the right to access and use the Platform is the service delivered, regardless of whether that right is exercised;</span></li>
+                <li><span className="sub-num">6.3.4</span><span>Dissatisfaction with a specific tutor&rsquo;s delivery style or personality â€” platform-wide service delivery is not impaired by individual tutor preferences;</span></li>
                 <li><span className="sub-num">6.3.5</span><span>Temporary inability to use the Platform due to personal circumstances (travel, illness, examinations, or emergencies) not caused by TAC;</span></li>
                 <li><span className="sub-num">6.3.6</span><span>Platform downtime of less than seventy-two (72) continuous hours;</span></li>
                 <li><span className="sub-num">6.3.7</span><span>Dissatisfaction with the quality of a specific community feature or non-core platform element; or</span></li>
@@ -599,36 +599,36 @@ export default function RefundPolicyPage() {
           {/* Section 7 */}
           <section className="tac-rp-section" id="s7">
             <div className="tac-rp-section-num">Section 07</div>
-            <h2>SAT DROP Webinar Refunds (₹149 per session)</h2>
+            <h2>SAT DROP Webinar Refunds (â‚¹149 per session)</h2>
 
             <div className="tac-rp-warning">
-              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>🚫</span>
+              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>ðŸš«</span>
               <span><strong>No refund is issued for SAT DROP webinar purchases once the payment is successfully processed.</strong></span>
             </div>
 
-            <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '18px 0 12px' }}>7.1 — Specific Circumstances</p>
+            <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '18px 0 12px' }}>7.1 â€” Specific Circumstances</p>
 
             <div className="tac-rp-event-grid">
               <div className="tac-rp-event-card">
-                <div className="tac-rp-event-card-icon">❌</div>
+                <div className="tac-rp-event-card-icon">âŒ</div>
                 <div className="tac-rp-event-card-label">7.1.1</div>
                 <div className="tac-rp-event-card-title">Webinar Cancelled by TAC</div>
-                <div className="tac-rp-event-card-desc">You will be offered: (a) full ₹149 credit to your TAC Wallet, or (b) transfer to a future SAT DROP of your choice. A cash refund is only available if formally requested in writing within seven (7) calendar days of the cancellation notice.</div>
+                <div className="tac-rp-event-card-desc">You will be offered: (a) full â‚¹149 credit to your TAC Wallet, or (b) transfer to a future SAT DROP of your choice. A cash refund is only available if formally requested in writing within seven (7) calendar days of the cancellation notice.</div>
               </div>
               <div className="tac-rp-event-card">
-                <div className="tac-rp-event-card-icon">🙅</div>
+                <div className="tac-rp-event-card-icon">ðŸ™…</div>
                 <div className="tac-rp-event-card-label">7.1.2</div>
                 <div className="tac-rp-event-card-title">User Unable to Attend</div>
                 <div className="tac-rp-event-card-desc">No refund is issued. You retain the right to access the 48-hour replay from the conclusion of the live event.</div>
               </div>
               <div className="tac-rp-event-card">
-                <div className="tac-rp-event-card-icon">📡</div>
+                <div className="tac-rp-event-card-icon">ðŸ“¡</div>
                 <div className="tac-rp-event-card-label">7.1.3</div>
                 <div className="tac-rp-event-card-title">Technical Failure (TAC&rsquo;s Side)</div>
-                <div className="tac-rp-event-card-desc">If TAC&rsquo;s streaming infrastructure fails (not your internet/device), report within 24 hours of the live event&rsquo;s conclusion. TAC may extend replay access as a goodwill gesture — this is not a refund entitlement.</div>
+                <div className="tac-rp-event-card-desc">If TAC&rsquo;s streaming infrastructure fails (not your internet/device), report within 24 hours of the live event&rsquo;s conclusion. TAC may extend replay access as a goodwill gesture â€” this is not a refund entitlement.</div>
               </div>
               <div className="tac-rp-event-card">
-                <div className="tac-rp-event-card-icon">⏰</div>
+                <div className="tac-rp-event-card-icon">â°</div>
                 <div className="tac-rp-event-card-label">7.1.4</div>
                 <div className="tac-rp-event-card-title">Post-Event Requests</div>
                 <div className="tac-rp-event-card-desc">No refund request will be entertained after the 48-hour replay window has expired.</div>
@@ -639,23 +639,23 @@ export default function RefundPolicyPage() {
           {/* Section 8 */}
           <section className="tac-rp-section" id="s8">
             <div className="tac-rp-section-num">Section 08</div>
-            <h2>Bootcamp Refunds (₹999 per bootcamp)</h2>
+            <h2>Bootcamp Refunds (â‚¹999 per bootcamp)</h2>
 
             <div className="tac-rp-warning">
-              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>🚫</span>
+              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>ðŸš«</span>
               <span><strong>No refund is issued for bootcamp purchases once payment is made, except as set out below.</strong></span>
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">8.1 — Bootcamp Cancelled by TAC</div>
+              <div className="tac-rp-clause-num">8.1 â€” Bootcamp Cancelled by TAC</div>
               <p>If TAC cancels a bootcamp, You will receive a full refund to your original payment instrument within <strong>seven (7) Working Days</strong>. Alternatively, You may opt for transfer to the next scheduled bootcamp on the same topic.</p>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">8.2 — Seat Transfer Option</div>
+              <div className="tac-rp-clause-num">8.2 â€” Seat Transfer Option</div>
               <p>You may transfer your confirmed bootcamp seat to a named third party by notifying <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> in writing at least twenty-four (24) hours before Day 1 of the bootcamp. No more than one seat transfer is permitted per purchase. No refund is issued in lieu of a transfer.</p>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">8.3 — Post-Commencement</div>
+              <div className="tac-rp-clause-num">8.3 â€” Post-Commencement</div>
               <p>Once Day 1 of a bootcamp has commenced, no refund, credit, or transfer will be issued under any circumstances.</p>
             </div>
           </section>
@@ -663,14 +663,14 @@ export default function RefundPolicyPage() {
           {/* Section 9 */}
           <section className="tac-rp-section" id="s9">
             <div className="tac-rp-section-num">Section 09</div>
-            <h2>Offline Course Refunds — TAC Suite and DM Batches</h2>
+            <h2>Offline Course Refunds â€” TAC Suite and DM Batches</h2>
 
             <div className="tac-rp-warning">
-              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>🚫</span>
+              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>ðŸš«</span>
               <span><strong>Once a batch has commenced (i.e., Orientation Day has passed), no refund of any amount is available under any circumstances, except for TAC-initiated batch cancellations.</strong></span>
             </div>
 
-            <p className="tac-rp-sub-heading">9.1 — Pre-Commencement Cancellation Schedule</p>
+            <p className="tac-rp-sub-heading">9.1 â€” Pre-Commencement Cancellation Schedule</p>
             <div className="tac-rp-tbl-wrap">
               <table className="tac-rp-tbl">
                 <thead>
@@ -683,7 +683,7 @@ export default function RefundPolicyPage() {
                 <tbody>
                   <tr>
                     <td><strong>More than 10 Working Days before Orientation Day</strong></td>
-                    <td><strong>Full fee paid MINUS ₹1,000 administrative fee</strong></td>
+                    <td><strong>Full fee paid MINUS â‚¹1,000 administrative fee</strong></td>
                     <td>Written cancellation request required. Refund processed within 7 Working Days.</td>
                   </tr>
                   <tr>
@@ -699,7 +699,7 @@ export default function RefundPolicyPage() {
                   <tr>
                     <td><strong>After Orientation Day</strong></td>
                     <td><strong>No refund</strong></td>
-                    <td>Documented medical emergency: written request with official medical documentation submitted within 5 Working Days of missed session — batch transfer may be considered at TAC&rsquo;s discretion only.</td>
+                    <td>Documented medical emergency: written request with official medical documentation submitted within 5 Working Days of missed session â€” batch transfer may be considered at TAC&rsquo;s discretion only.</td>
                   </tr>
                   <tr>
                     <td><strong>TAC cancels the batch</strong></td>
@@ -710,7 +710,7 @@ export default function RefundPolicyPage() {
               </table>
             </div>
 
-            <p className="tac-rp-sub-heading">9.2 — Batch Transfer Policy</p>
+            <p className="tac-rp-sub-heading">9.2 â€” Batch Transfer Policy</p>
             <ul className="tac-rp-sublist">
               <li><span className="sub-num">9.2.1</span><span>Each student is entitled to one (1) free batch transfer during their entire enrolment with TAC for offline courses;</span></li>
               <li><span className="sub-num">9.2.2</span><span>A transfer request must be submitted in writing at least five (5) Working Days before Orientation Day of the original batch;</span></li>
@@ -718,10 +718,10 @@ export default function RefundPolicyPage() {
               <li><span className="sub-num">9.2.4</span><span>The transferred student is bound by the fees, terms, and conditions of the new batch.</span></li>
             </ul>
 
-            <p className="tac-rp-sub-heading">9.3 — Non-Refundable Costs</p>
+            <p className="tac-rp-sub-heading">9.3 â€” Non-Refundable Costs</p>
             <p style={{ fontSize: '.88rem', color: '#3a3a50', marginBottom: '8px' }}>The following costs are non-refundable under any circumstances:</p>
             <ul className="tac-rp-sublist">
-              <li><span className="sub-num">9.3.1</span><span>The ₹1,000 administrative fee applicable to pre-commencement cancellations;</span></li>
+              <li><span className="sub-num">9.3.1</span><span>The â‚¹1,000 administrative fee applicable to pre-commencement cancellations;</span></li>
               <li><span className="sub-num">9.3.2</span><span>Any course material costs or access fees paid separately; and</span></li>
               <li><span className="sub-num">9.3.3</span><span>Any tuition or coaching fees paid to any third-party resource recommended by TAC.</span></li>
             </ul>
@@ -730,13 +730,13 @@ export default function RefundPolicyPage() {
           {/* Section 10 */}
           <section className="tac-rp-section" id="s10">
             <div className="tac-rp-section-num">Section 10</div>
-            <h2>Cancellation Procedure — Digital Subscriptions</h2>
+            <h2>Cancellation Procedure â€” Digital Subscriptions</h2>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">10.1 — You may cancel your digital subscription at any time using any of the following methods:</div>
+              <div className="tac-rp-clause-num">10.1 â€” You may cancel your digital subscription at any time using any of the following methods:</div>
               <ul className="tac-rp-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">10.1.1</span><span>Log in &gt; Account Settings &gt; Subscription Management &gt; Cancel Subscription;</span></li>
-                <li><span className="sub-num">10.1.2</span><span>Email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with subject <em>&lsquo;Subscription Cancellation – [Full Name] – [Registered Mobile]&rsquo;</em>; or</span></li>
+                <li><span className="sub-num">10.1.2</span><span>Email <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with subject <em>&lsquo;Subscription Cancellation â€“ [Full Name] â€“ [Registered Mobile]&rsquo;</em>; or</span></li>
                 <li><span className="sub-num">10.1.3</span><span>Revoke the JODO mandate directly through your UPI app or bank&rsquo;s net banking portal.</span></li>
               </ul>
             </div>
@@ -745,11 +745,11 @@ export default function RefundPolicyPage() {
               <p>TAC will send a written cancellation confirmation to Your registered email address within twenty-four (24) hours of processing. Retain this confirmation for your records.</p>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">10.3 — Post-Cancellation Access</div>
+              <div className="tac-rp-clause-num">10.3 â€” Post-Cancellation Access</div>
               <p>Following cancellation, Your access to the Platform continues until the last day of the billing period for which payment has already been made. No access extension is available beyond this period.</p>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">10.4 — Data Retention Post-Cancellation</div>
+              <div className="tac-rp-clause-num">10.4 â€” Data Retention Post-Cancellation</div>
               <p>Your User Account, course progress, bookmarks, and community activity will be preserved for six (6) months following the expiry of your final paid access period. Re-subscribing within this six (6) month window will restore your full account history.</p>
             </div>
           </section>
@@ -764,30 +764,30 @@ export default function RefundPolicyPage() {
               <p>In circumstances where TAC issues a credit instead of a cash refund (as described in Clause 7.1.1 for webinar cancellations), the credit is issued to your TAC Wallet associated with your User Account.</p>
             </div>
 
-            <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '16px 0 12px' }}>11.2 — TAC Wallet Credits Are Subject to the Following Terms:</p>
+            <p style={{ fontWeight: 600, color: 'var(--ink)', margin: '16px 0 12px' }}>11.2 â€” TAC Wallet Credits Are Subject to the Following Terms:</p>
             <div className="tac-rp-wallet-grid">
               <div className="tac-rp-wallet-item">
-                <div className="tac-rp-wallet-item-icon">✅</div>
+                <div className="tac-rp-wallet-item-icon">âœ…</div>
                 <div className="tac-rp-wallet-item-title">Usable Across All Products</div>
-                <div className="tac-rp-wallet-item-desc">Credits may be applied against any future TAC purchase — subscription, webinar, bootcamp, or offline course fee.</div>
+                <div className="tac-rp-wallet-item-desc">Credits may be applied against any future TAC purchase â€” subscription, webinar, bootcamp, or offline course fee.</div>
               </div>
               <div className="tac-rp-wallet-item">
-                <div className="tac-rp-wallet-item-icon">🔒</div>
+                <div className="tac-rp-wallet-item-icon">ðŸ”’</div>
                 <div className="tac-rp-wallet-item-title">Non-Transferable</div>
                 <div className="tac-rp-wallet-item-desc">Credits are non-transferable to any other User Account.</div>
               </div>
               <div className="tac-rp-wallet-item">
-                <div className="tac-rp-wallet-item-icon">🚫</div>
+                <div className="tac-rp-wallet-item-icon">ðŸš«</div>
                 <div className="tac-rp-wallet-item-title">Not Encashable</div>
                 <div className="tac-rp-wallet-item-desc">Credits cannot be converted to cash or transferred to any bank account.</div>
               </div>
               <div className="tac-rp-wallet-item">
-                <div className="tac-rp-wallet-item-icon">📅</div>
+                <div className="tac-rp-wallet-item-icon">ðŸ“…</div>
                 <div className="tac-rp-wallet-item-title">12-Month Expiry</div>
                 <div className="tac-rp-wallet-item-desc">Credits expire twelve (12) months from date of issue if not utilised.</div>
               </div>
               <div className="tac-rp-wallet-item">
-                <div className="tac-rp-wallet-item-icon">⚠️</div>
+                <div className="tac-rp-wallet-item-icon">âš ï¸</div>
                 <div className="tac-rp-wallet-item-title">No Liability for Expiry</div>
                 <div className="tac-rp-wallet-item-desc">TAC is not responsible for credits that expire due to inactivity or non-use.</div>
               </div>
@@ -797,14 +797,14 @@ export default function RefundPolicyPage() {
           {/* Section 12 */}
           <section className="tac-rp-section" id="s12">
             <div className="tac-rp-section-num">Section 12</div>
-            <h2>Refund Processing — Method, Timeline, and TAC&rsquo;s Role</h2>
+            <h2>Refund Processing â€” Method, Timeline, and TAC&rsquo;s Role</h2>
 
             <div className="tac-rp-clause">
               <div className="tac-rp-clause-num">12.1</div>
               <p>All refunds authorised under this Policy will be processed to the <strong>original payment instrument</strong> used for the relevant transaction. TAC does not issue refunds by cash, cheque, or bank transfer to an account different from the payment source.</p>
             </div>
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">12.2 — Refund Timelines by Payment Method</div>
+              <div className="tac-rp-clause-num">12.2 â€” Refund Timelines by Payment Method</div>
             </div>
 
             <div className="tac-rp-tbl-wrap">
@@ -820,22 +820,22 @@ export default function RefundPolicyPage() {
                   <tr>
                     <td><strong>UPI AutoPay</strong></td>
                     <td>Within 2 Working Days of refund approval</td>
-                    <td>2–3 Working Days after TAC initiation</td>
+                    <td>2â€“3 Working Days after TAC initiation</td>
                   </tr>
                   <tr>
                     <td><strong>eNACH / Net Banking</strong></td>
                     <td>Within 2 Working Days of refund approval</td>
-                    <td>5–7 Working Days after TAC initiation</td>
+                    <td>5â€“7 Working Days after TAC initiation</td>
                   </tr>
                   <tr>
                     <td><strong>Debit Card</strong></td>
                     <td>Within 2 Working Days of refund approval</td>
-                    <td>5–7 Working Days after TAC initiation</td>
+                    <td>5â€“7 Working Days after TAC initiation</td>
                   </tr>
                   <tr>
                     <td><strong>Credit Card</strong></td>
                     <td>Within 2 Working Days of refund approval</td>
-                    <td>7–10 Working Days after TAC initiation</td>
+                    <td>7â€“10 Working Days after TAC initiation</td>
                   </tr>
                 </tbody>
               </table>
@@ -858,13 +858,13 @@ export default function RefundPolicyPage() {
 
             <div className="tac-rp-contact-card">
               <h3>How to Submit a Refund Request</h3>
-              <div className="cc-row"><span className="cc-icon">✉️</span><p><strong style={{ color: '#fff' }}>Email:</strong> <a href="mailto:support@theartcode.org">support@theartcode.org</a></p></div>
-              <div className="cc-row"><span className="cc-icon">📋</span><p><strong style={{ color: '#fff' }}>Subject line:</strong> <em style={{ color: 'rgba(255,255,255,.65)' }}>&lsquo;Refund Request – [Full Name] – [Transaction Reference]&rsquo;</em></p></div>
-              <div className="cc-row"><span className="cc-icon">📎</span><p><strong style={{ color: '#fff' }}>Include in body:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Full name · Registered mobile number · JODO transaction reference or order ID · Date of transaction · Amount in question · Clear description of the exception under this Policy on which your refund claim is based</span></p></div>
-              <div className="cc-row"><span className="cc-icon">🗂️</span><p><strong style={{ color: '#fff' }}>Attach:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Bank statement excerpt showing debit · Screenshot of transaction · TAC cancellation confirmation email (if applicable)</span></p></div>
+              <div className="cc-row"><span className="cc-icon">âœ‰ï¸</span><p><strong style={{ color: '#fff' }}>Email:</strong> <a href="mailto:support@theartcode.org">support@theartcode.org</a></p></div>
+              <div className="cc-row"><span className="cc-icon">ðŸ“‹</span><p><strong style={{ color: '#fff' }}>Subject line:</strong> <em style={{ color: 'rgba(255,255,255,.65)' }}>&lsquo;Refund Request â€“ [Full Name] â€“ [Transaction Reference]&rsquo;</em></p></div>
+              <div className="cc-row"><span className="cc-icon">ðŸ“Ž</span><p><strong style={{ color: '#fff' }}>Include in body:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Full name Â· Registered mobile number Â· JODO transaction reference or order ID Â· Date of transaction Â· Amount in question Â· Clear description of the exception under this Policy on which your refund claim is based</span></p></div>
+              <div className="cc-row"><span className="cc-icon">ðŸ—‚ï¸</span><p><strong style={{ color: '#fff' }}>Attach:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Bank statement excerpt showing debit Â· Screenshot of transaction Â· TAC cancellation confirmation email (if applicable)</span></p></div>
             </div>
 
-            <p className="tac-rp-sub-heading" style={{ marginTop: '20px' }}>13.1 — TAC&rsquo;s Response Timeline</p>
+            <p className="tac-rp-sub-heading" style={{ marginTop: '20px' }}>13.1 â€” TAC&rsquo;s Response Timeline</p>
             <ul className="tac-rp-sublist">
               <li><span className="sub-num">13.1.4</span><span>TAC will <strong>acknowledge</strong> your request within one (1) Working Day;</span></li>
               <li><span className="sub-num">13.1.5</span><span>TAC will complete its <strong>investigation and communicate its decision</strong> within five (5) Working Days of acknowledgement; and</span></li>
@@ -872,8 +872,8 @@ export default function RefundPolicyPage() {
             </ul>
 
             <div className="tac-rp-notice" style={{ marginTop: '16px' }}>
-              <span className="tac-rp-notice-icon">⚠️</span>
-              <span><strong>13.2 —</strong> Refund requests submitted outside the timeframes specified in this Policy will not be entertained. TAC&rsquo;s decision on all refund requests is final, subject to any rights you may have under the Consumer Protection Act, 2019.</span>
+              <span className="tac-rp-notice-icon">âš ï¸</span>
+              <span><strong>13.2 â€”</strong> Refund requests submitted outside the timeframes specified in this Policy will not be entertained. TAC&rsquo;s decision on all refund requests is final, subject to any rights you may have under the Consumer Protection Act, 2019.</span>
             </div>
           </section>
 
@@ -883,16 +883,16 @@ export default function RefundPolicyPage() {
             <h2>Statutory Consumer Rights</h2>
 
             <div className="tac-rp-success">
-              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>⚖️</span>
-              <span><strong>14.1 —</strong> Nothing in this Policy restricts, limits, or excludes any rights to which you are entitled as a consumer under the Consumer Protection Act, 2019, the Consumer Protection (E-Commerce) Rules, 2020, or any other Applicable Law that cannot be contractually excluded.</span>
+              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>âš–ï¸</span>
+              <span><strong>14.1 â€”</strong> Nothing in this Policy restricts, limits, or excludes any rights to which you are entitled as a consumer under the Consumer Protection Act, 2019, the Consumer Protection (E-Commerce) Rules, 2020, or any other Applicable Law that cannot be contractually excluded.</span>
             </div>
 
             <div className="tac-rp-clause">
-              <div className="tac-rp-clause-num">14.2 — If you believe TAC has engaged in an unfair trade practice, restrictive trade practice, or a deficiency in service, you may:</div>
+              <div className="tac-rp-clause-num">14.2 â€” If you believe TAC has engaged in an unfair trade practice, restrictive trade practice, or a deficiency in service, you may:</div>
               <ul className="tac-rp-sublist" style={{ marginTop: '10px' }}>
-                <li><span className="sub-num">14.2.1</span><span>File a written complaint with TAC&rsquo;s Grievance Officer at <a href="mailto:legal@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>legal@theartcode.org</a> — response within fifteen (15) Working Days;</span></li>
+                <li><span className="sub-num">14.2.1</span><span>File a written complaint with TAC&rsquo;s Grievance Officer at <a href="mailto:legal@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>legal@theartcode.org</a> â€” response within fifteen (15) Working Days;</span></li>
                 <li><span className="sub-num">14.2.2</span><span>Escalate your complaint to the appropriate Consumer Disputes Redressal Commission (District, State, or National level) under Section 35 or Section 47 of the Consumer Protection Act, 2019, as applicable;</span></li>
-                <li><span className="sub-num">14.2.3</span><span>Access the <strong>National Consumer Helpline</strong> at <strong>1800-11-4000</strong> (toll-free, Monday–Saturday, 9:30 AM – 5:30 PM IST); or</span></li>
+                <li><span className="sub-num">14.2.3</span><span>Access the <strong>National Consumer Helpline</strong> at <strong>1800-11-4000</strong> (toll-free, Mondayâ€“Saturday, 9:30 AM â€“ 5:30 PM IST); or</span></li>
                 <li><span className="sub-num">14.2.4</span><span>Use the Central Consumer Protection Authority&rsquo;s Integrated Grievance Redressal Mechanism at <a href="https://consumerhelpline.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', fontWeight: 600 }}>consumerhelpline.gov.in</a>.</span></li>
               </ul>
             </div>
@@ -909,7 +909,7 @@ export default function RefundPolicyPage() {
 
             <div className="tac-rp-clause">
               <div className="tac-rp-clause-num">15.1</div>
-              <p>TAC reserves the right to amend this Policy at any time. Where amendments are material — in particular, where they tighten refund entitlements or expand the scope of the no-refund position — TAC will provide not less than <strong>fourteen (14) days&rsquo; advance written notice</strong> by email before the amendments take effect.</p>
+              <p>TAC reserves the right to amend this Policy at any time. Where amendments are material â€” in particular, where they tighten refund entitlements or expand the scope of the no-refund position â€” TAC will provide not less than <strong>fourteen (14) days&rsquo; advance written notice</strong> by email before the amendments take effect.</p>
             </div>
             <div className="tac-rp-clause">
               <div className="tac-rp-clause-num">15.2</div>
@@ -917,8 +917,8 @@ export default function RefundPolicyPage() {
             </div>
 
             <div className="tac-rp-contact">
-              <a href="mailto:support@theartcode.org" className="tac-rp-contact-pill"><span>✉️</span> support@theartcode.org</a>
-              <a href="mailto:legal@theartcode.org" className="tac-rp-contact-pill"><span>⚖️</span> legal@theartcode.org</a>
+              <a href="mailto:support@theartcode.org" className="tac-rp-contact-pill"><span>âœ‰ï¸</span> support@theartcode.org</a>
+              <a href="mailto:legal@theartcode.org" className="tac-rp-contact-pill"><span>âš–ï¸</span> legal@theartcode.org</a>
             </div>
           </section>
 
@@ -929,3 +929,4 @@ export default function RefundPolicyPage() {
     </>
   );
 }
+

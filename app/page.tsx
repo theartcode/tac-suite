@@ -1,4 +1,4 @@
-import { HeroSection } from "@/components/HeroSection";
+﻿import { HeroSection } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
 import { CourseSlider } from "@/components/CourseSlider";
 import { SkillsSection } from "@/components/SkillsSection";
@@ -9,7 +9,7 @@ import { PlacementSection } from "@/components/RealJobs";
 import PeopleSection from "@/components/Placed";
 import { PartnersSection } from "@/components/Rectangles";
 import { ChallengeSection } from "@/components/Lakh";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/Footer";
 import { StudentWorks } from "@/components/StudentWorks";
 import TutorsSection from "@/components/Tutors";
 
@@ -18,7 +18,7 @@ export default function Home() {
     <main>
       <Navbar />
 
-      {/* Hero — no ID needed, logo click scrolls to top */}
+      {/* Hero â€” no ID needed, logo click scrolls to top */}
       <HeroSection />
 
       {/* Cohorts */}
@@ -56,3 +56,4 @@ export default function Home() {
     </main>
   );
 }
+

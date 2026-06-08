@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Bebas_Neue } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/Footer";
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -67,7 +67,7 @@ export default function CoursesPage() {
           </h1>
 
           <p className="text-sm md:text-base max-w-[600px] leading-relaxed text-[#1D1D1D]/70">
-            Not just skills — we build creators. Learn, create, and monetize with
+            Not just skills â€” we build creators. Learn, create, and monetize with
             real-world content strategies.
           </p>
         </section>

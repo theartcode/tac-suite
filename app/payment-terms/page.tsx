@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/footer";
+﻿import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const css = `
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
@@ -346,8 +346,8 @@ export default function PaymentTermsPage() {
           <div className="tac-pt-hero-eyebrow">Legal Document</div>
           <h1>Payment Terms &amp; Conditions</h1>
           <p className="tac-pt-hero-sub">
-            All financial transactions between you and The Art Code — subscriptions, events, offline courses, and
-            institutional programmes — are governed by these terms.
+            All financial transactions between you and The Art Code â€” subscriptions, events, offline courses, and
+            institutional programmes â€” are governed by these terms.
           </p>
           <div className="tac-pt-hero-meta">
             <span>TAC School of Modern Learning Pvt. Ltd.</span>
@@ -380,11 +380,11 @@ export default function PaymentTermsPage() {
           {/* Section 2 */}
           <section className="tac-pt-section" id="s2">
             <div className="tac-pt-section-num">Section 02</div>
-            <h2>Payment Gateway — JODO</h2>
+            <h2>Payment Gateway â€” JODO</h2>
 
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">2.1</div>
-              <p>All digital payments to TAC — including subscription fees, webinar fees, bootcamp fees, and any other platform-related charges — are processed exclusively through JODO (Jodo Financial Solutions Private Limited), operating the Jodo Flex recurring payments platform at www.jodo.in. JODO is TAC&rsquo;s designated and exclusive payment gateway for digital transactions.</p>
+              <p>All digital payments to TAC â€” including subscription fees, webinar fees, bootcamp fees, and any other platform-related charges â€” are processed exclusively through JODO (Jodo Financial Solutions Private Limited), operating the Jodo Flex recurring payments platform at www.jodo.in. JODO is TAC&rsquo;s designated and exclusive payment gateway for digital transactions.</p>
             </div>
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">2.2</div>
@@ -392,7 +392,7 @@ export default function PaymentTermsPage() {
             </div>
 
             <div className="tac-pt-clause">
-              <div className="tac-pt-clause-num">2.3 — TAC Never Stores Your Payment Credentials</div>
+              <div className="tac-pt-clause-num">2.3 â€” TAC Never Stores Your Payment Credentials</div>
               <p>TAC does not store, process, or have access to any of the following sensitive payment credentials:</p>
               <ul className="tac-pt-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">2.3.1</span><span>Full debit card or credit card numbers;</span></li>
@@ -419,7 +419,7 @@ export default function PaymentTermsPage() {
             <h2>Accepted Payment Methods</h2>
 
             <div className="tac-pt-clause">
-              <div className="tac-pt-clause-num">3.1 — Accepted Methods for Digital Transactions via JODO</div>
+              <div className="tac-pt-clause-num">3.1 â€” Accepted Methods for Digital Transactions via JODO</div>
               <ul className="tac-pt-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">3.1.1</span><span><strong>UPI AutoPay</strong> via all UPI-enabled applications registered with NPCI, including Google Pay, PhonePe, Paytm, BHIM, and bank-native UPI apps;</span></li>
                 <li><span className="sub-num">3.1.2</span><span><strong>eNACH mandate</strong> via net banking (supported banks include SBI, HDFC, ICICI, Axis, Kotak, Yes Bank, PNB, Bank of Baroda, and all other major scheduled commercial banks);</span></li>
@@ -441,7 +441,7 @@ export default function PaymentTermsPage() {
 
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">4.1</div>
-              <p>All prices displayed on the TAC Platform and in TAC&rsquo;s marketing communications are denominated in Indian Rupees (₹).</p>
+              <p>All prices displayed on the TAC Platform and in TAC&rsquo;s marketing communications are denominated in Indian Rupees (â‚¹).</p>
             </div>
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">4.2</div>
@@ -452,7 +452,7 @@ export default function PaymentTermsPage() {
               <p>TAC will automatically generate and issue a GST-compliant tax invoice to your registered email address after each successful payment transaction.</p>
             </div>
             <div className="tac-pt-clause">
-              <div className="tac-pt-clause-num">4.4 — B2B Subscribers &amp; GST Input Tax Credit</div>
+              <div className="tac-pt-clause-num">4.4 â€” B2B Subscribers &amp; GST Input Tax Credit</div>
               <p>If You are a GST-registered entity seeking to claim Input Tax Credit (ITC) on TAC&rsquo;s subscription fees, You must update your GSTIN in your User Account under <em>Account Settings &gt; Tax Information</em> before making payment. TAC will issue a B2B tax invoice reflecting your GSTIN for all eligible transactions. ITC eligibility is subject to applicable GST law and You are solely responsible for verifying your entitlement to ITC.</p>
             </div>
             <div className="tac-pt-clause">
@@ -466,65 +466,65 @@ export default function PaymentTermsPage() {
             <div className="tac-pt-section-num">Section 05</div>
             <h2>Subscription Billing and Auto-Pay Mandate</h2>
 
-            <p className="tac-pt-sub-heading">5.1 — Mandate Setup</p>
+            <p className="tac-pt-sub-heading">5.1 â€” Mandate Setup</p>
             <ul className="tac-pt-sublist">
               <li><span className="sub-num">5.1.1</span><span>When You subscribe to the Creator Pass or Module Pass for the first time, the checkout process on the TAC Platform will prompt You to set up a recurring payment mandate through JODO. This mandate authorises JODO to initiate an automatic debit of the applicable subscription fee from your chosen payment instrument on each Billing Date, without requiring further action or confirmation from You.</span></li>
               <li><span className="sub-num">5.1.2</span><span>The mandate setup requires You to authenticate the mandate using your UPI PIN (for UPI AutoPay) or net banking credentials / debit card (for eNACH). This authentication constitutes your legally binding consent to recurring auto-debits.</span></li>
-              <li><span className="sub-num">5.1.3</span><span>The maximum per-transaction amount set in the mandate corresponds to the applicable subscription price (₹2,999 for Creator Pass; ₹499 for Module Pass) at the time of mandate setup. If TAC revises subscription prices under Clause 12, a new mandate may be required at the revised amount.</span></li>
+              <li><span className="sub-num">5.1.3</span><span>The maximum per-transaction amount set in the mandate corresponds to the applicable subscription price (â‚¹2,999 for Creator Pass; â‚¹499 for Module Pass) at the time of mandate setup. If TAC revises subscription prices under Clause 12, a new mandate may be required at the revised amount.</span></li>
             </ul>
 
             <div className="tac-pt-price-grid" style={{ marginTop: '20px' }}>
               <div className="tac-pt-price-card">
-                <div className="tac-pt-price-card-icon">🎨</div>
+                <div className="tac-pt-price-card-icon">ðŸŽ¨</div>
                 <div className="tac-pt-price-card-label">Creator Pass</div>
-                <div className="tac-pt-price-card-amount">₹2,999</div>
-                <div className="tac-pt-price-card-desc">Per month · Auto-debited via JODO mandate</div>
+                <div className="tac-pt-price-card-amount">â‚¹2,999</div>
+                <div className="tac-pt-price-card-desc">Per month Â· Auto-debited via JODO mandate</div>
               </div>
               <div className="tac-pt-price-card">
-                <div className="tac-pt-price-card-icon">📦</div>
+                <div className="tac-pt-price-card-icon">ðŸ“¦</div>
                 <div className="tac-pt-price-card-label">Module Pass</div>
-                <div className="tac-pt-price-card-amount">₹499</div>
-                <div className="tac-pt-price-card-desc">Per month · Auto-debited via JODO mandate</div>
+                <div className="tac-pt-price-card-amount">â‚¹499</div>
+                <div className="tac-pt-price-card-desc">Per month Â· Auto-debited via JODO mandate</div>
               </div>
               <div className="tac-pt-price-card">
-                <div className="tac-pt-price-card-icon">🎙️</div>
+                <div className="tac-pt-price-card-icon">ðŸŽ™ï¸</div>
                 <div className="tac-pt-price-card-label">SAT DROP Webinar</div>
-                <div className="tac-pt-price-card-amount">₹149</div>
-                <div className="tac-pt-price-card-desc">Per session · Single non-recurring payment</div>
+                <div className="tac-pt-price-card-amount">â‚¹149</div>
+                <div className="tac-pt-price-card-desc">Per session Â· Single non-recurring payment</div>
               </div>
               <div className="tac-pt-price-card">
-                <div className="tac-pt-price-card-icon">🚀</div>
+                <div className="tac-pt-price-card-icon">ðŸš€</div>
                 <div className="tac-pt-price-card-label">Bootcamp</div>
-                <div className="tac-pt-price-card-amount">₹999</div>
-                <div className="tac-pt-price-card-desc">Per event · Single non-recurring payment</div>
+                <div className="tac-pt-price-card-amount">â‚¹999</div>
+                <div className="tac-pt-price-card-desc">Per event Â· Single non-recurring payment</div>
               </div>
             </div>
 
-            <p className="tac-pt-sub-heading">5.2 — Billing Date and Cycle</p>
+            <p className="tac-pt-sub-heading">5.2 â€” Billing Date and Cycle</p>
             <ul className="tac-pt-sublist">
               <li><span className="sub-num">5.2.1</span><span>Your first Billing Date is the date on which you first successfully subscribed. Your subsequent Billing Dates are the corresponding calendar date in each following month.</span></li>
               <li><span className="sub-num">5.2.2</span><span>Where the Billing Date would fall on a date that does not exist in the applicable month (e.g., the 30th or 31st in February), the debit will be initiated on the last calendar day of that month.</span></li>
               <li><span className="sub-num">5.2.3</span><span>The billing cycle for each subscription month runs from the Billing Date to the day before the next Billing Date. Access to the Platform during the billing cycle is subject to successful payment.</span></li>
             </ul>
 
-            <p className="tac-pt-sub-heading">5.3 — Pre-Debit Notifications</p>
+            <p className="tac-pt-sub-heading">5.3 â€” Pre-Debit Notifications</p>
             <ul className="tac-pt-sublist">
               <li><span className="sub-num">5.3.1</span><span>TAC, through JODO, will send You a pre-debit notification by email and SMS to your registered email address and mobile number at least three (3) calendar days before each Billing Date. This notification constitutes advance notice of the upcoming debit, as required by RBI&rsquo;s recurring payment guidelines.</span></li>
               <li><span className="sub-num">5.3.2</span><span>You have the right to cancel or modify the mandate before the Billing Date upon receiving this notification, as set out in Clause 5.5.</span></li>
             </ul>
 
-            <p className="tac-pt-sub-heading">5.4 — Auto-Debit Process on Billing Date</p>
+            <p className="tac-pt-sub-heading">5.4 â€” Auto-Debit Process on Billing Date</p>
             <ul className="tac-pt-sublist">
               <li><span className="sub-num">5.4.1</span><span>On each Billing Date, JODO will initiate the auto-debit from your registered payment instrument. The debit typically occurs between 00:00 and 06:00 hours IST on the Billing Date.</span></li>
               <li><span className="sub-num">5.4.2</span><span>Upon successful debit, a payment confirmation and GST invoice will be emailed to your registered email address within two (2) hours.</span></li>
               <li><span className="sub-num">5.4.3</span><span>Platform access for the new billing cycle is renewed automatically upon receipt of payment confirmation by TAC&rsquo;s systems.</span></li>
             </ul>
 
-            <p className="tac-pt-sub-heading">5.5 — Cancellation of Mandate</p>
-            <p style={{ fontSize: '.88rem', color: '#3a3a50', marginBottom: '10px' }}>5.5.1 — You may cancel the recurring payment mandate at any time before your next Billing Date by any of the following means:</p>
+            <p className="tac-pt-sub-heading">5.5 â€” Cancellation of Mandate</p>
+            <p style={{ fontSize: '.88rem', color: '#3a3a50', marginBottom: '10px' }}>5.5.1 â€” You may cancel the recurring payment mandate at any time before your next Billing Date by any of the following means:</p>
             <ul className="tac-pt-sublist">
               <li><span className="sub-num">5.5.1.1</span><span>Logging in to your User Account &gt; Account Settings &gt; Subscription &gt; Cancel Subscription;</span></li>
-              <li><span className="sub-num">5.5.1.2</span><span>Emailing <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with the subject line <em>&lsquo;Subscription Cancellation – [Name] – [Registered Mobile]&rsquo;</em>;</span></li>
+              <li><span className="sub-num">5.5.1.2</span><span>Emailing <a href="mailto:support@theartcode.org" style={{ color: 'var(--accent)', fontWeight: 600 }}>support@theartcode.org</a> with the subject line <em>&lsquo;Subscription Cancellation â€“ [Name] â€“ [Registered Mobile]&rsquo;</em>;</span></li>
               <li><span className="sub-num">5.5.1.3</span><span>Revoking the UPI AutoPay mandate directly through your UPI application (GPay/PhonePe/Paytm &gt; Autopay / Recurring Payments &gt; TAC &gt; Cancel); or</span></li>
               <li><span className="sub-num">5.5.1.4</span><span>Contacting your bank to cancel the eNACH mandate associated with TAC/JODO.</span></li>
             </ul>
@@ -537,7 +537,7 @@ export default function PaymentTermsPage() {
           {/* Section 6 */}
           <section className="tac-pt-section" id="s6">
             <div className="tac-pt-section-num">Section 06</div>
-            <h2>Bundle Plans — Payment Terms</h2>
+            <h2>Bundle Plans â€” Payment Terms</h2>
 
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">6.1</div>
@@ -560,11 +560,11 @@ export default function PaymentTermsPage() {
           {/* Section 7 */}
           <section className="tac-pt-section" id="s7">
             <div className="tac-pt-section-num">Section 07</div>
-            <h2>Single-Event Purchases — Webinars and Bootcamps</h2>
+            <h2>Single-Event Purchases â€” Webinars and Bootcamps</h2>
 
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">7.1</div>
-              <p>SAT DROP Webinar (₹149 per session) and Bootcamp (₹999 per event) purchases are single, non-recurring transactions processed through JODO. No mandate is created.</p>
+              <p>SAT DROP Webinar (â‚¹149 per session) and Bootcamp (â‚¹999 per event) purchases are single, non-recurring transactions processed through JODO. No mandate is created.</p>
             </div>
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">7.2</div>
@@ -590,7 +590,7 @@ export default function PaymentTermsPage() {
               <p>As a general policy, the full course fee is due and payable in cleared funds on or before Orientation Day. TAC will not admit a student to any classroom session until the full fee is paid. Partial payment does not grant rights to partial access.</p>
             </div>
             <div className="tac-pt-clause">
-              <div className="tac-pt-clause-num">8.3 — Instalment Arrangements</div>
+              <div className="tac-pt-clause-num">8.3 â€” Instalment Arrangements</div>
               <p>Where an instalment arrangement is agreed in writing between TAC and a student prior to enrolment, the following terms apply:</p>
               <ul className="tac-pt-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">8.3.1</span><span>Each instalment is due on the specific date agreed and communicated in the written instalment schedule;</span></li>
@@ -608,7 +608,7 @@ export default function PaymentTermsPage() {
           {/* Section 9 */}
           <section className="tac-pt-section" id="s9">
             <div className="tac-pt-section-num">Section 09</div>
-            <h2>Failed Transactions — Bank Debit Without TAC Receipt</h2>
+            <h2>Failed Transactions â€” Bank Debit Without TAC Receipt</h2>
 
             <div className="tac-pt-clause">
               <div className="tac-pt-clause-num">9.1</div>
@@ -668,7 +668,7 @@ export default function PaymentTermsPage() {
             <h2>Price Changes</h2>
 
             <div className="tac-pt-clause">
-              <div className="tac-pt-clause-num">12.1 — Active Monthly Subscriptions</div>
+              <div className="tac-pt-clause-num">12.1 â€” Active Monthly Subscriptions</div>
               <p>TAC reserves the right to change subscription prices, bundle prices, or the price of any other TAC Service. In respect of active monthly subscriptions, the following procedure applies to price changes:</p>
               <ul className="tac-pt-sublist" style={{ marginTop: '10px' }}>
                 <li><span className="sub-num">12.1.1</span><span>TAC will provide not less than thirty (30) days&rsquo; advance written notice of any price increase to your registered email address;</span></li>
@@ -689,8 +689,8 @@ export default function PaymentTermsPage() {
             <h2>Security and Fraud Prevention</h2>
 
             <div className="tac-pt-warning">
-              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>🚨</span>
-              <span><strong>13.1 — TAC will never, under any circumstances, ask You to share your UPI PIN, OTP, CVV, net banking password, or any other sensitive payment credential</strong> through any channel, including email, telephone, WhatsApp, or chat. Any communication claiming to be from TAC and asking for such information is fraudulent.</span>
+              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '1px' }}>ðŸš¨</span>
+              <span><strong>13.1 â€” TAC will never, under any circumstances, ask You to share your UPI PIN, OTP, CVV, net banking password, or any other sensitive payment credential</strong> through any channel, including email, telephone, WhatsApp, or chat. Any communication claiming to be from TAC and asking for such information is fraudulent.</span>
             </div>
 
             <div className="tac-pt-clause">
@@ -702,7 +702,7 @@ export default function PaymentTermsPage() {
               <p>TAC is not liable for any financial loss arising from your disclosure of payment credentials to any third party, including persons impersonating TAC.</p>
             </div>
             <div className="tac-pt-clause">
-              <div className="tac-pt-clause-num">13.4 — Chargeback Misuse</div>
+              <div className="tac-pt-clause-num">13.4 â€” Chargeback Misuse</div>
               <p>Filing a chargeback or payment reversal with your bank in respect of a legitimate TAC transaction (i.e., one where payment was received by TAC and access was provided) constitutes fraud and a material breach of this Agreement. TAC reserves the right to pursue recovery of chargedback amounts, account suspension, and legal action in such cases.</p>
             </div>
           </section>
@@ -725,15 +725,15 @@ export default function PaymentTermsPage() {
 
             <div className="tac-pt-contact-card">
               <h3>Payment Support</h3>
-              <div className="cc-row"><span className="cc-icon">✉️</span><p><strong style={{ color: '#fff' }}>Email:</strong> <a href="mailto:support@theartcode.org">support@theartcode.org</a></p></div>
-              <div className="cc-row"><span className="cc-icon">📋</span><p><strong style={{ color: '#fff' }}>Subject line format:</strong> <em style={{ color: 'rgba(255,255,255,.65)' }}>&lsquo;Payment Query – [Name] – [Transaction Reference]&rsquo;</em></p></div>
-              <div className="cc-row"><span className="cc-icon">📎</span><p><strong style={{ color: '#fff' }}>Include:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Registered mobile number · JODO/transaction reference number · Date and amount of transaction · Nature of query</span></p></div>
-              <div className="cc-row"><span className="cc-icon">⏱️</span><p><strong style={{ color: '#fff' }}>Response Time:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Same Working Day for urgent payment failures · Up to two (2) Working Days for invoicing, GST, and other billing matters</span></p></div>
+              <div className="cc-row"><span className="cc-icon">âœ‰ï¸</span><p><strong style={{ color: '#fff' }}>Email:</strong> <a href="mailto:support@theartcode.org">support@theartcode.org</a></p></div>
+              <div className="cc-row"><span className="cc-icon">ðŸ“‹</span><p><strong style={{ color: '#fff' }}>Subject line format:</strong> <em style={{ color: 'rgba(255,255,255,.65)' }}>&lsquo;Payment Query â€“ [Name] â€“ [Transaction Reference]&rsquo;</em></p></div>
+              <div className="cc-row"><span className="cc-icon">ðŸ“Ž</span><p><strong style={{ color: '#fff' }}>Include:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Registered mobile number Â· JODO/transaction reference number Â· Date and amount of transaction Â· Nature of query</span></p></div>
+              <div className="cc-row"><span className="cc-icon">â±ï¸</span><p><strong style={{ color: '#fff' }}>Response Time:</strong> <span style={{ color: 'rgba(255,255,255,.65)' }}>Same Working Day for urgent payment failures Â· Up to two (2) Working Days for invoicing, GST, and other billing matters</span></p></div>
             </div>
 
             <div className="tac-pt-contact" style={{ marginTop: '20px' }}>
-              <a href="mailto:support@theartcode.org" className="tac-pt-contact-pill"><span>✉️</span> support@theartcode.org</a>
-              <a href="mailto:legal@theartcode.org" className="tac-pt-contact-pill"><span>⚖️</span> legal@theartcode.org</a>
+              <a href="mailto:support@theartcode.org" className="tac-pt-contact-pill"><span>âœ‰ï¸</span> support@theartcode.org</a>
+              <a href="mailto:legal@theartcode.org" className="tac-pt-contact-pill"><span>âš–ï¸</span> legal@theartcode.org</a>
             </div>
           </section>
 
@@ -743,3 +743,4 @@ export default function PaymentTermsPage() {
     </>
   );
 }
+

@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Bebas_Neue } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/Footer";
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -109,7 +109,7 @@ export default function AboutPage() {
         <section className="w-full max-w-[600px] mx-auto bg-[#111] p-6 sm:p-10 md:p-[60px] rounded-[20px] border border-white/5 shadow-2xl">
           {submitted ? (
             <div className="text-center py-8">
-              <h2 className="text-3xl font-bold mb-3">🎉 You&apos;re In!</h2>
+              <h2 className="text-3xl font-bold mb-3">ðŸŽ‰ You&apos;re In!</h2>
               <p className="text-white/60">We&apos;ll contact you soon.</p>
             </div>
           ) : (
