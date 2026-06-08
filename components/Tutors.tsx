@@ -157,9 +157,8 @@ export default function TutorsSection() {
                     <img
                       src={img}
                       alt=""
-                      className={`w-[270px] h-[170px] sm:w-[480px] sm:h-[280px] md:w-[680px] md:h-[380px] object-cover rounded-[1.5rem] md:rounded-[2.5rem] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 ${
-                        isActive ? "ring-4 md:ring-8 ring-white/50" : "grayscale-[20%]"
-                      }`}
+                      className={`w-[270px] h-[170px] sm:w-[480px] sm:h-[280px] md:w-[680px] md:h-[380px] object-cover rounded-[1.5rem] md:rounded-[2.5rem] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 ${isActive ? "ring-4 md:ring-8 ring-white/50" : "grayscale-[20%]"
+                        }`}
                       draggable={false}
                     />
                   </motion.div>
@@ -175,11 +174,10 @@ export default function TutorsSection() {
             <button
               key={i}
               onClick={() => setIndex(i)}
-              className={`h-1.5 rounded-full transition-all duration-500 ${
-                i === index
+              className={`h-1.5 rounded-full transition-all duration-500 ${i === index
                   ? "bg-black w-14"
                   : "bg-black/10 w-3 hover:bg-black/30"
-              }`}
+                }`}
             />
           ))}
         </div>
