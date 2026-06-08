@@ -574,7 +574,7 @@ const galleryItems = [
   { image: "/works/nike.jpeg",     text: "NIKE  POSTER"      },
   { image: "/works/biker.png",     text: "BIKER  POSTER"    },
   { image: "/works/Vedam.jpg",     text: "VEDAM  POSTER"     },
-  { image: "/works/dandora.png",   text: "DANDORA  POSTER"    },
+  // { image: "/works/dandora.png",   text: "DANDORA  POSTER"    },
   { image: "/works/spirit.png",    text: "SPIRIT  POSTER"    },
   { image: "/works/arjun.png",     text: "ARJUN REDDY POSTER"    },
   { image: "/works/og.png",        text: "OG  POSTER" },
