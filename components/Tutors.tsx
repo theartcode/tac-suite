@@ -17,7 +17,6 @@ const tutors = [
   "/tutors/tutor4.jpg",
   "/tutors/tutor5.jpg",
   "/tutors/tutor6.jpg",
-  "/tutors/tutor7.jpg",
   "/tutors/tutor8.jpg",
 ];
 

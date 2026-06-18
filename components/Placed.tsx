@@ -43,14 +43,6 @@ function StudentCard({ student }: { student: Student }) {
 // ── Row 1 students ────────────────────────────────────────────
 const topStudents: Student[] = [
   {
-    photo: "/students/anandd.png",
-    name: "Ravi Teja",
-    company: "Pixel Studio",
-    role: "Graphic Designer",
-    skills: ["Video Editing", "Motion Graphics", "Illustration"],
-    lpa: "3.2",
-  },
-  {
     photo: "/students/1.png",
     name: "Vijay Kumar",
     company: "Nikhila Constructions",
@@ -77,7 +69,7 @@ const topStudents: Student[] = [
 
   {
     photo: "/students/4.png",
-    name: "Shanukh",
+    name: "Shanmukh",
     company: "Freelancer",
     role: "Content Shooting",
     skills: ["Video Editing", "Content Shooting", "Graphic Designing"],
@@ -171,7 +163,7 @@ const bottomStudents: Student[] = [
     photo: "/students/15.png",
     name: "Anand",
     company: "Freelancer",
-    role: "Video Editor",
+    role: "Video Editor, Cinematographer",
     skills: ["Graphic Designing", "Content Shoting", "Content Writing"],
     
   },
@@ -211,7 +203,7 @@ const bottomStudents: Student[] = [
     company: "Property Edge",
     role: "Video Editor",
     skills: ["Graphic Designing", "Content Shooting", "Content Writing"],
-    lpa: "4.2",
+    lpa: "3.0",
   },
   {
     photo: "/students/21.png",
@@ -227,7 +219,7 @@ const bottomStudents: Student[] = [
     company: "Property Edge",
     role: "Video Editor & Graphic Designer",
     skills: ["Content Shooting", "Content Writing"],
-    lpa: "4.2",
+    lpa: "3.0",
   },
   {
     photo: "/students/23.png",
@@ -235,7 +227,7 @@ const bottomStudents: Student[] = [
     company: "Citta Ai",
     role: "Graphic Designer",
     skills: ["Graphic Design", "Content Shooting", "Content Writing"],
-    lpa: "4.2",
+    lpa: "3.2",
   },
   {
     photo: "/students/24.png",
@@ -243,7 +235,7 @@ const bottomStudents: Student[] = [
     company: "Property Edge",
     role: "Graphic Designer",
     skills: ["Video Editing", "Content Shooting", "Content Writing"],
-    lpa: "4.2",
+    lpa: "3.0",
   },
 ];
 

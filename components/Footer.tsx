@@ -31,10 +31,10 @@ export function Footer() {
             <div>
               <p className="text-xs font-semibold tracking-[2px] uppercase text-white mb-0.5">Address</p>
               <p className="text-xs text-white/50 leading-relaxed">
-  Ground Floor,<br />
-  P No 51 to 58, SY 74,<br />
-  East Marredpally, Seva Mandal Society,<br />
-  Secunderabad, Hyderabad, Telangana - 500026
+   4th Floor,<br />
+   Plot No. 286, Road No 16,<br />
+  Ayyappa Society Main Rd<br />
+  Madhapur, Telangana 500081
 </p>
             </div>
           </div>
