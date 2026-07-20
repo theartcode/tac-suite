@@ -94,6 +94,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <head>
         {/* 🔥 Facebook Pixel */}
@@ -135,7 +136,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="min-h-full flex flex-col bg-[#FBF8E4] text-black">
+      <body className="min-h-full flex flex-col bg-[#FBF8E4] text-black" suppressHydrationWarning>
 
         {/* 🔥 GTM NoScript */}
         <noscript>

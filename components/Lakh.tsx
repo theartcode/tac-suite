@@ -18,7 +18,7 @@ export function ChallengeSection() {
     email: "",
     phone: "",
     age: "",
-    qualification: "",
+    qualification: " ",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

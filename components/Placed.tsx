@@ -131,6 +131,40 @@ const topStudents: Student[] = [
     skills: ["Video Editing", "Content Shooting", "Writing"],
     lpa: "3.0",
   },
+    {
+    photo: "/students/25.png",
+    name: "Gowtham",
+    company: "Rakshan Academy",
+    role: "Creative Strategist",
+    skills: ["Graphic Designing", "Content Shooting", "Content Writing"],
+    lpa: "4.8"
+  },
+     {
+    photo: "/students/26.png",
+    name: "Kundhan",
+    company: "Reginald Men",
+    role: "Video Editor",
+    skills: ["Graphic Designing", "Content Shooting", "Content Writing"],
+    lpa: "3.6"
+  },
+    
+  {
+    photo: "/students/28.png",
+    name: "Navaneeth",
+    company: "Honasa Company",
+    role: "Video Editor",
+    skills: ["Graphic Designing", "Content Shooting", "Content Writing"],
+    lpa: "3.6"
+  },
+    {
+    photo: "/students/30.png",
+    name: "Vishnu",
+    company: "The Big Day By CHAI",
+    role: "Video Editor",
+    skills: ["Graphic Designing", "Content Shooting", "Content Writing"],
+    lpa: "3.0"
+  },
+
 ];
 
 // ── Row 2 students ────────────────────────────────────────────
@@ -235,6 +269,22 @@ const bottomStudents: Student[] = [
     company: "Property Edge",
     role: "Graphic Designer",
     skills: ["Video Editing", "Content Shooting", "Content Writing"],
+    lpa: "3.0",
+  },
+       {
+    photo: "/students/27.png",
+    name: "Virajitha",
+    company: "Reginald Men",
+    role: "Video Editor",
+    skills: ["Graphic Designing", "Content Shooting", "Content Writing"],
+    lpa: "3.0",
+  },
+         {
+    photo: "/students/29.png",
+    name: "Chandhra Jyothi",
+    company: "Dakshin Stories",
+    role: "Graphic Designer",
+    skills: ["Video Editor", "Content Shooting", "Content Writing"],
     lpa: "3.0",
   },
 ];
