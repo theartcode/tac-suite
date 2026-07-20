@@ -584,9 +584,10 @@ const galleryItems = [
   { image: "/works/NIKE.png",     text: "NIKE POSTER"    },
   { image: "/works/PORSCHE.png",     text: "PORSCHE POSTER"    },
   { image: "/works/JAGUAR.png",     text: "JAGUAR POSTER"    },
-  { image: "/works/FOOD.png",     text: "FOOD POSTER"    },
+  { image: "/works/FOOD.png",     text: "FOOD POSTER 2"    },
   { image: "/works/KAADHAL.png",     text: "KAADHAL POSTER"    },
   { image: "/works/GTR.png",     text: "PORSCHE GTR POSTER"    },
+  { image: "/works/FOOD1.png",     text: "FOOD POSTER 1"    },
 ];
 
 // ============================================================
