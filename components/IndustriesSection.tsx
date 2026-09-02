@@ -3,16 +3,16 @@
 import { motion } from "framer-motion";
 
 const industries = [
-  { id: "01", title: "Food & Beverage", image: "/industries/01.png" },
-  { id: "02", title: "Fashion & Beauty", image: "/industries/02.png" },
-  { id: "03", title: "Apparel & Lifestyle", image: "/industries/03.png" },
-  { id: "04", title: "Construction & Real Estate", image: "/industries/04.png" },
-  { id: "05", title: "Education & Training", image: "/industries/05.png" },
-  { id: "06", title: "Entertainment & Media", image: "/industries/06.png" },
-  { id: "07", title: "Health & Wellness", image: "/industries/07.png" },
-  { id: "08", title: "Automobiles & Transport", image: "/industries/08.png" },
-  { id: "09", title: "Jewellery & Boutiques", image: "/industries/09.png" },
-  { id: "10", title: "Miscellaneous & Emerging", image: "/industries/10.png" },
+  { id: "01", title: "Food & Beverage", image: "/industries/01.webp" },
+  { id: "02", title: "Fashion & Beauty", image: "/industries/02.webp" },
+  { id: "03", title: "Apparel & Lifestyle", image: "/industries/03.webp" },
+  { id: "04", title: "Construction & Real Estate", image: "/industries/04.webp" },
+  { id: "05", title: "Education & Training", image: "/industries/05.webp" },
+  { id: "06", title: "Entertainment & Media", image: "/industries/06.webp" },
+  { id: "07", title: "Health & Wellness", image: "/industries/07.webp" },
+  { id: "08", title: "Automobiles & Transport", image: "/industries/08.webp" },
+  { id: "09", title: "Jewellery & Boutiques", image: "/industries/09.webp" },
+  { id: "10", title: "Miscellaneous & Emerging", image: "/industries/10.webp" },
 ];
 
 export function IndustriesSection() {

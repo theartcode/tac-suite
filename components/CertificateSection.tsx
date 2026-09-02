@@ -80,7 +80,7 @@ export function CertificateSection() {
           {/* CERTIFICATE IMAGE - in empty space */}
           <div className="flex-1 flex items-center justify-center min-h-[300px]">
             <img
-              src="/certificate.jpg"
+              src="/certificate.webp"
               alt="TAC Job Ready Certificate"
               className="w-full h-auto object-contain rounded-[12px] max-h-[400px]"
             />

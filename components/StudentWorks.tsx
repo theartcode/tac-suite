@@ -570,24 +570,24 @@ function CircularGallery({
 // ============================================================
 
 const galleryItems = [
-  { image: "/works/mothish.jpeg",  text: "PEDDI  POSTER"   },
+  { image: "/works/mothish.webp",  text: "PEDDI  POSTER"   },
   { image: "/works/nike.jpeg",     text: "NIKE  POSTER"      },
   { image: "/works/biker.png",     text: "BIKER  POSTER"    },
   { image: "/works/Vedam.jpg",     text: "VEDAM  POSTER"     },
   // { image: "/works/dandora.png",   text: "DANDORA  POSTER"    },
   { image: "/works/arjun.png",     text: "ARJUN REDDY POSTER"    },
-  { image: "/works/BMW.png",     text: "BMW POSTER"    },
-  { image: "/works/PARADISE.png",     text: "PARADISE POSTER"    },
-  { image: "/works/DASARA.png",     text: "DASARA POSTER"    },
-  { image: "/works/ISLAND.png",     text: "ISLAND POSTER"    },
-  { image: "/works/NK.png",     text: "NUVVE KAVALI POSTER"    },
-  { image: "/works/NIKE.png",     text: "NIKE POSTER"    },
-  { image: "/works/PORSCHE.png",     text: "PORSCHE POSTER"    },
-  { image: "/works/JAGUAR.png",     text: "JAGUAR POSTER"    },
-  { image: "/works/FOOD.png",     text: "FOOD POSTER 2"    },
-  { image: "/works/KAADHAL.png",     text: "KAADHAL POSTER"    },
-  { image: "/works/GTR.png",     text: "PORSCHE GTR POSTER"    },
-  { image: "/works/FOOD1.png",     text: "FOOD POSTER 1"    },
+  { image: "/works/BMW.webp",     text: "BMW POSTER"    },
+  { image: "/works/PARADISE.webp",     text: "PARADISE POSTER"    },
+  { image: "/works/DASARA.webp",     text: "DASARA POSTER"    },
+  { image: "/works/ISLAND.webp",     text: "ISLAND POSTER"    },
+  { image: "/works/NK.webp",     text: "NUVVE KAVALI POSTER"    },
+  { image: "/works/NIKE.webp",     text: "NIKE POSTER"    },
+  { image: "/works/PORSCHE.webp",     text: "PORSCHE POSTER"    },
+  { image: "/works/JAGUAR.webp",     text: "JAGUAR POSTER"    },
+  { image: "/works/FOOD.webp",     text: "FOOD POSTER 2"    },
+  { image: "/works/KAADHAL.webp",     text: "KAADHAL POSTER"    },
+  { image: "/works/GTR.webp",     text: "PORSCHE GTR POSTER"    },
+  { image: "/works/FOOD1.webp",     text: "FOOD POSTER 1"    },
 ];
 
 // ============================================================
